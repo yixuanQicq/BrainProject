@@ -1,0 +1,59 @@
+{
+  "dependencies": {
+    "antd": "^2.13.10",
+    "enquire-js": "^0.1.0",
+    "prop-types": "^15.6.0",
+    "rc-queue-anim": "^1.4.0",
+    "rc-scroll-anim": "^2.0.2",
+    "rc-tween-one": "^1.5.5",
+    "react": "^16.1.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.1.1",
+    "react-github-button": "^0.1.11",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "atool-build": "^1.0.2",
+    "atool-test-mocha": "^0.1.7",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "dora": "^0.4.5",
+    "dora-plugin-webpack": "^1.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "expect": "^21.2.1",
+    "gh-pages": "^1.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.5",
+    "redbox-react": "^1.5.0"
+  },
+  "entry": {
+    "index": "./index.js"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "private": true,
+  "scripts": {
+    "build": "atool-build && cp index.html dist",
+    "check": "npm run prettier-check && npm run eslint-check",
+    "deploy": "rm -rf dist && npm run build && node ./deploy.js",
+    "eslint-check": "eslint --no-error-on-unmatched-pattern \"src/**/*.{js,jsx}\"",
+    "eslint-fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.{js,jsx}\" --fix",
+    "fix": "npm run prettier-fix && npm run eslint-fix",
+    "lint": "eslint --ext .js,.jsx src/",
+    "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{js,jsx,css,less}\"",
+    "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{js,jsx,css,less}\"",
+    "start": "dora --plugins webpack",
+    "test": "atool-test-mocha ./**/__tests__/*-test.js"
+  }
+}
