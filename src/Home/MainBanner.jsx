@@ -4,7 +4,7 @@ import React from 'react';
 
 // import GitHubButton from 'react-github-button';
 
-function Banner() {
+function Banner(props) {
     return (
         <div className="intro-banner-wrapper">
             <Row></Row>
@@ -12,7 +12,7 @@ function Banner() {
             <Row></Row>
             <Row gutter={16}>
                 <Col span={12}></Col>
-                <Col span={12}>
+                <Col span={10}>
                     <div className="intro-banner-wrapper-div">
                         <h1>Centile Brain</h1>
                         <h3>This repository offers the opportunity to generate indices of
@@ -21,6 +21,7 @@ function Banner() {
                             Lifespan Working Group,</h3>
                     </div>
                 </Col>
+                <Col span={2}></Col>
             </Row>
         </div>
     );

@@ -6,7 +6,7 @@ import React from 'react';
 import UploadDataForm from './UploadDataForm';
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Page2 extends React.Component {
+class FormPage extends React.Component {
     render() {
         return (
             <div className="home-page page2">
@@ -37,4 +37,4 @@ class Page2 extends React.Component {
     }
 }
 
-export default Page2;
+export default FormPage;

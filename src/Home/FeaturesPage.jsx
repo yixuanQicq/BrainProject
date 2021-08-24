@@ -82,7 +82,7 @@ const pointPos = [
     { x: 50, y: 50, opacity: 0.2 },
 ];
 
-class Page1 extends React.PureComponent {
+class FeaturesPage extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -236,4 +236,4 @@ class Page1 extends React.PureComponent {
     }
 }
 
-export default Page1;
+export default FeaturesPage;

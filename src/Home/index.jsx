@@ -5,11 +5,11 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 
 import Banner from './Banner';
+import FeaturesPage from './FeaturesPage';
 import Footer from './Footer';
+import FormPage from './FormPage';
 import Header from './Header';
-import Page1 from './Page1';
-import Page2 from './Page2';
-import MainBanner from './static/MainBanner';
+import MainBanner from './MainBanner';
 
 let isMobile;
 
@@ -44,7 +44,7 @@ class Home extends React.PureComponent {
     render() {
         const page2Ref = React.createRef();
         return (
-            <DocumentTitle title="Ant Design - pro">
+            <DocumentTitle title="Brain Project">
                 <div>
                     <Header isMobile={this.state.isMobile} />
                     <div className="home-wrapper">
@@ -54,8 +54,8 @@ class Home extends React.PureComponent {
                             page2Ref={page2Ref}
                             isMobile={this.state.isMobile}
                         />
-                        <Page2 ref={page2Ref} />
-                        <Page1 isMobile={this.state.isMobile} />
+                        <FormPage ref={page2Ref} />
+                        <FeaturesPage isMobile={this.state.isMobile} />
                     </div>
                     <Footer></Footer>
                 </div>
