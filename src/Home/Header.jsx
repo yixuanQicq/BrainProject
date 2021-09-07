@@ -1,6 +1,7 @@
 import { Button, Col, Icon, Menu, Popover, Row } from 'antd';
 import { enquireScreen } from 'enquire-js';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LOGO_URL =
     'https://pbs.twimg.com/profile_images/510183712554635264/nO1xJR0U_400x400.jpeg';
@@ -27,6 +28,7 @@ class Header extends React.Component {
             <Menu mode={menuMode} id="nav" key="nav">
                 <Menu.Item key="home">
                     <a>Home</a>
+                    <Link to='/'>Home</Link>
                 </Menu.Item>
                 <Menu.Item key="docs">
                     <a>
@@ -42,6 +44,7 @@ class Header extends React.Component {
                     <a>
                         <span>Contact</span>
                     </a>
+                    <Link to='/contact'>Contact</Link>
                 </Menu.Item>
 
                 {menuMode === 'inline' && (

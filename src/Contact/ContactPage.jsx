@@ -12,6 +12,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import useAlert from '../hooks/useAlert';
 import emailjs from 'emailjs-com';
 import AlertMessage from "./AlertMessage";
+import Footer from '../Home/Footer';
+import Header from '../Home/Header';
 
 const useStyles = makeStyles((theme) => ({
     firstBox: {
@@ -86,6 +88,7 @@ export default function ContactPage(props) {
 
     return (
         <section>
+            <Header></Header>
             <Grid container>
                 <Grid item xs={12} md={6}>
                     <Box pt={10} display="flex" className={classes.firstBox}>
