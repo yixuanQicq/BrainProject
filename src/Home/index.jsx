@@ -4,6 +4,7 @@ import { enquireScreen } from 'enquire-js';
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
+import ContactPage from '../Contact/ContactPage';
 import Banner from './Banner';
 import FeaturesPage from './FeaturesPage';
 import Footer from './Footer';
@@ -56,6 +57,7 @@ class Home extends React.PureComponent {
                         />
                         <FormPage ref={page2Ref} />
                         <FeaturesPage isMobile={this.state.isMobile} />
+                        <ContactPage/>
                     </div>
                     <Footer></Footer>
                 </div>

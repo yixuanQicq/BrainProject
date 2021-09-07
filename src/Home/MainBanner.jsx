@@ -12,7 +12,7 @@ function Banner(props) {
             <Row></Row>
             <Row gutter={16}>
                 <Col span={12}></Col>
-                <Col span={10}>
+                <Col span={11}>
                     <div className="intro-banner-wrapper-div">
                         <h1>Centile Brain</h1>
                         <h3>This repository offers the opportunity to generate indices of
@@ -21,7 +21,7 @@ function Banner(props) {
                             Lifespan Working Group,</h3>
                     </div>
                 </Col>
-                <Col span={2}></Col>
+                <Col span={1}></Col>
             </Row>
         </div>
     );

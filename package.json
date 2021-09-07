@@ -1,5 +1,12 @@
 {
   "dependencies": {
+      "@material-ui/core": "^4.11.4",
+      "@material-ui/icons": "^4.11.2",
+      "@material-ui/lab": "^4.0.0-alpha.58",
+      "@material/form-field": "^11.0.0",
+      "@material/react-button": "^0.15.0",
+      "@material/textfield": "^11.0.0",
+
     "antd": "^2.13.10",
     "enquire-js": "^0.1.0",
     "prop-types": "^15.6.0",
@@ -14,6 +21,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+      "emailjs-com": "^3.1.0",
     "atool-build": "^1.0.2",
     "atool-test-mocha": "^0.1.7",
     "babel-eslint": "^8.0.2",
