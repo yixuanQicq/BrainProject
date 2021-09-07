@@ -12,8 +12,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import useAlert from '../hooks/useAlert';
 import emailjs from 'emailjs-com';
 import AlertMessage from "./AlertMessage";
-import Footer from '../Home/Footer';
 import Header from '../Home/Header';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     firstBox: {
@@ -117,6 +117,9 @@ export default function ContactPage(props) {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <FormControlLabel control={<Checkbox checked={checked} onChange={() => {setChecked(!checked)}} name="terms" color="primary" />} label={content['terms']} />
+                                        <p>
+                                            <Link to='/privacy'>view our privacy policy</Link>
+                                        </p>
                                     </Grid>
                                 </Grid>
                                 <Box mt={2}>

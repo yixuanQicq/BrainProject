@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import ContactPage from './Contact/ContactPage';
+import Privacy from './Contact/PrivacyPage';
 
 
 function App() {
     return (
         <Router>
             <div>
-                <Link to='/contact'></Link>
                 <Switch>
                     <Route exact path="/">
                         <Home />
@@ -18,6 +18,9 @@ function App() {
                     </Route>
                     <Route path="/contact">
                         <ContactPage/>
+                    </Route>
+                    <Route path="/privacy">
+                        <Privacy/>
                     </Route>
                 </Switch>
             </div>
