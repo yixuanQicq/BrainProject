@@ -6,7 +6,7 @@ body {
 }
 
 body {
-    font-family: @font-family;
+    font-family: Aharoni;
     line-height: 1.5;
     color: @site-text-color;
     font-size: 14px;
@@ -44,7 +44,8 @@ svg g {
 }
 
 .intro-banner-wrapper {
-    background-image: url("https://previews.dropbox.com/p/thumb/ABSiHYBKJIZaGooVe_HD3ZcddgmVVbQUIGtXOOcGe6XlSsXTdw94JSTDWXhAymkjCvFm-cArhE9SIwBibGlcaS6V30A0dYyWk_IwdI4ZwsD9gfVTdc7ikndqqt7frKZSi5R_13b8hXfJvDvr53ZejMjlmJ2pKJqXMglYTMj56dw-3bGA2p06FfGVvwNocnquBJ6exZzGKhmV06XKEmsxE3qrqYsIJuwfhMZhqudzDeoWPbRBFu68egpbc6xCkOdg658SFfeDmw8iyWLy05Tc_flcNTeaxW1SHwb7XS83QfAz4QUrZF0ldVJrQubkMo6gu3Q8tDS0e_NQpWPsbBEKMVqajnc5jiL8gE9p53SkbSzTzA/p.png?fv_content=true&size_mode=5");
+    font-family: Aharoni;
+    background-image: url("https://previews.dropbox.com/p/thumb/ABSRHci1tQMAUVxyvOb-uxkaNuYgpQpK2sBlG0Ju61RJmsWgn1-0dm7PL9IyBYrvl9A_ttX8wmkUYCDljsfEGq0A8tMcuFSawf4YgltCP92_i6iJL5mUySGwPOjkclmB9T0FEsykafS2dZ2Be9-vdv9B9X4rlp9ZGAcrzwNxoBOVcBCKfiUzhrYyQboDF3Cb4eGYrAeo9_7h9EcOCEzJOhzxILN-H5ghvZnMu9NyPYe0uxJZMc4Etqh27mybKaOHVZmWplm2cif5b-RZbAmkAPm96g6K9ULMcJlIrLrhqxZ4zDaSpY1mROoD3zwiQKhtXf2kL91LF6t4LVu0NIAuYRN2XorUKxWUaql2-BFiN3y0rA/p.png?fv_content=true&size_mode=5");
     position: relative;
     height: 100vh;
     left: 0;
@@ -58,6 +59,11 @@ svg g {
             grid-column: 5;
             color: white;
             font-size: 350%;
+            border-radius: 25px;
+            border: 5px solid #2383de;
+            padding: 20px;
+            width: 270px;
+            height: 110px;
         }
         h3{
             color: white;
@@ -201,7 +207,7 @@ svg g {
 
 /** page1 **/
 .page1 {
-    height: 960px;
+    height: auto;
 }
 .page1-line.title-line-wrapper {
     width: 312px;
@@ -231,13 +237,13 @@ svg g {
         display: inline-block;
         will-change: transform;
         .page1-box {
-            width: 194px;
+            width: 300px;
             margin: auto;
             text-align: center;
             position: relative;
             .page1-image {
-                width: 80px;
-                height: 80px;
+                width: 300px;
+                height: 300px;
                 border-radius: 40px;
                 margin: 20px auto 32px;
                 position: relative;
@@ -247,14 +253,18 @@ svg g {
                 justify-content: center;
                 background: #fff;
                 transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+                .page1-image-img {
+                        width: 300px;
+                }
             }
             &:hover .page1-image {
                 transform: translateY(-5px);
             }
             h3 {
                 color: #0d1a26;
-                font-size: 16px;
-                margin: 8px auto;
+                font-size: 170%;
+                text-align: left;
+                margin: 50px auto;
             }
         }
     }

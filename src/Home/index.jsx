@@ -49,12 +49,7 @@ class Home extends React.PureComponent {
                     <Header isMobile={this.state.isMobile} />
                     <div className="home-wrapper">
                         <MainBanner />
-                        <Banner
-                            scrollToUploadData={this.scrollToUploadData}
-                            page2Ref={page2Ref}
-                            isMobile={this.state.isMobile}
-                        />
-                        <FormPage ref={page2Ref} />
+                        {/*<FormPage ref={page2Ref} />*/}
                         <FeaturesPage isMobile={this.state.isMobile} />
                     </div>
                     <Footer></Footer>

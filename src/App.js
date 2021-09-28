@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import ContactPage from './Contact/ContactPage';
 import Privacy from './Contact/PrivacyPage';
+import ExplorePage from './Explore/ExplorePage';
+import PublicationsPage from './Publications/PublicationsPage';
+import TeamPage from './Team/TeamPage';
 
 
 function App() {
@@ -15,6 +18,15 @@ function App() {
                     </Route>
                     <Route path="/csv">
                         <h2>hey</h2>
+                    </Route>
+                    <Route path="/explore">
+                        <ExplorePage/>
+                    </Route>
+                    <Route path="/publications">
+                        <PublicationsPage/>
+                    </Route>
+                    <Route path="/team">
+                        <TeamPage />
                     </Route>
                     <Route path="/contact">
                         <ContactPage/>

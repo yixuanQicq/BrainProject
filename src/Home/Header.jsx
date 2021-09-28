@@ -30,21 +30,35 @@ class Header extends React.Component {
                     <a>Home</a>
                     <Link to='/'>Home</Link>
                 </Menu.Item>
-                <Menu.Item key="docs">
+                <Menu.Item key="explore">
                     <a>
-                        <span>Documentation</span>
+                        <span>Explore CentileBrain</span>
                     </a>
+                    <Link to='/explore'></Link>
                 </Menu.Item>
                 <Menu.Item key="model_repository">
                     <a>
-                        <span>Model Repository</span>
+                        <span>CentileBrain Model</span>
                     </a>
+                    <Link to='/'></Link>
+                </Menu.Item>
+                <Menu.Item key="pulications">
+                    <a>
+                        <span>Publications</span>
+                    </a>
+                    <Link to='/publications'></Link>
+                </Menu.Item>
+                <Menu.Item key="team">
+                    <a>
+                        <span>Team</span>
+                    </a>
+                    <Link to='/team'></Link>
                 </Menu.Item>
                 <Menu.Item key="contact">
                     <a>
                         <span>Contact</span>
                     </a>
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact'></Link>
                 </Menu.Item>
 
                 {menuMode === 'inline' && (
