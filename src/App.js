@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
-import Home from './Home';
 import ContactPage from './Contact/ContactPage';
 import Privacy from './Contact/PrivacyPage';
 import ExplorePage from './Explore/ExplorePage';
 import PublicationsPage from './Publications/PublicationsPage';
 import TeamPage from './Team/TeamPage';
+import Home from './Home';
 
 
 function App() {

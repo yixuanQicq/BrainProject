@@ -12,7 +12,7 @@ const { TweenOneGroup } = TweenOne;
 const featuresCN = [
     {
         title: 'Explore the CentileBrain Dataset',
-        src: 'src/Home/data/iStock-1162471079 Explore.svg',
+        src: 'src/Home/data/explore2.svg',
         color: '#13C2C2',
         link: "/explore",
         shadowColor: 'rgba(19,194,194,.12)',
@@ -39,17 +39,17 @@ const featuresCN = [
         shadowColor: 'rgba(26,196,77,.12)',
     },
     {
-        title: 'Centile Brain Publications',
+        title: 'CentileBrain Publications',
         src: 'src/Home/data/iStock-1323841513 publications.svg',
         color: '#FAAD14',
         link: "/publications",
         shadowColor: 'rgba(250,173,20,.12)',
     },
     {
-        title: 'Contact Us',
+        title: 'Learn More About ENIGMA Consortium',
         src: 'src/Home/data/icons8-send-hot-list.svg',
         color: '#722ED1',
-        link: '/contact',
+        link: 'http://enigma.ini.usc.edu/',
         shadowColor: 'rgba(114,46,209,.12)',
     }
 /*    {
@@ -225,9 +225,7 @@ class FeaturesPage extends React.PureComponent {
                             Features
                         </Parallax>
                     )}
-                    <h2>
-                        What can <span>CentileBrain</span> do for you{' '}
-                    </h2>
+
                     <div className="title-line-wrapper page1-line">
                         <div className="title-line" />
                     </div>

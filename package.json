@@ -1,13 +1,13 @@
 {
   "dependencies": {
-      "@material-ui/core": "^4.11.4",
-      "@material-ui/icons": "^4.11.2",
-      "@material-ui/lab": "^4.0.0-alpha.58",
-      "@material/form-field": "^11.0.0",
-      "@material/react-button": "^0.15.0",
-      "@material/textfield": "^11.0.0",
-
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material/form-field": "^11.0.0",
+    "@material/react-button": "^0.15.0",
+    "@material/textfield": "^11.0.0",
     "antd": "^2.13.10",
+    "bootstrap": "^5.1.2",
     "enquire-js": "^0.1.0",
     "prop-types": "^15.6.0",
     "rc-queue-anim": "^1.4.0",
@@ -18,10 +18,10 @@
     "react-dom": "16.14.0",
     "react-github-button": "^0.1.11",
     "react-router": "5.2.1",
-    "react-router-dom": "5.3.0"
+    "react-router-dom": "5.3.0",
+    "src": "^1.1.2"
   },
   "devDependencies": {
-      "emailjs-com": "^3.1.0",
     "atool-build": "^1.0.2",
     "atool-test-mocha": "^0.1.7",
     "babel-eslint": "^8.0.2",
@@ -30,6 +30,7 @@
     "babel-runtime": "^6.26.0",
     "dora": "^0.4.5",
     "dora-plugin-webpack": "^1.0.0",
+    "emailjs-com": "^3.1.0",
     "eslint": "^7.3.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",

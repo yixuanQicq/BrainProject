@@ -1,0 +1,27 @@
+section {
+    background-color: #f2f4f5;
+    padding-bottom: 6rem;
+}
+
+.team-title {
+    margin-top: 6rem;
+}
+
+.team-title h1{
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.team-title h1:after{
+    content: "";
+    background: #333333;
+    text-align: center;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
