@@ -47,9 +47,9 @@ const featuresCN = [
     },
     {
         title: 'Learn More About ENIGMA Consortium',
-        src: 'src/Home/data/icons8-send-hot-list.svg',
+        src: 'src/Home/data/enigma.jpeg',
         color: '#722ED1',
-        link: 'http://enigma.ini.usc.edu/',
+        link: 'https://enigma.ini.usc.edu/',
         shadowColor: 'rgba(114,46,209,.12)',
     }
 /*    {

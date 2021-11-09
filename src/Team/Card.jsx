@@ -12,7 +12,7 @@ export default function Card(props) {
                     {props.name}
                 </h4>
                 <p className="card-text text-secondary">
-                    text
+                    {props.title}
                 </p>
             </div>
         </div>

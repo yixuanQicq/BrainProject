@@ -3,6 +3,7 @@ import Header from '../Home/Header';
 import Card from './Card';
 import 'bootstrap/dist/css/bootstrap.css';
 import './team-style.css'
+import { Link } from 'react-router-dom';
 
 export default function TeamPage(props) {
 
@@ -18,13 +19,19 @@ export default function TeamPage(props) {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
-                            <Card imgsrc={"src/Team/photos/sophia.jpg"} name={"Dr. Sophia Frangou"}/>
+                            <Link to={{ pathname:`https://www.centreforbrainhealth.ca/frangou-sophia`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"src/Team/photos/sophia.jpg"} name={"Dr. Sophia Frangou"} title={"Clinical Neuroscientist"}/>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <Card imgsrc={"src/Team/photos/ruiyang.jpg"} name={"Dr. Ruiyang Ge"}/>
+                            <Link to={{ pathname:`https://www.researchgate.net/profile/Ruiyang-Ge`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"src/Team/photos/ruiyang2.jpg"} name={"Dr. Ruiyang Ge"} title={"Biomedical Engineer"}/>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <Card imgsrc={"src/Team/photos/yuetong.jpg"} name={"Yuetong Yu"}/>
+                            <Link to={{ pathname:`https://linkedin.com/in/yuetong-jordan-yu`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"src/Team/photos/yuetong.jpg"} name={"Yuetong Yu"} title={"Data Scientist"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -32,13 +39,19 @@ export default function TeamPage(props) {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
-                            <Card imgsrc={"src/Team/photos/yixuan.jpg"} name={"Yi Xuan Qi"}/>
+                            <Link to={{ pathname:`https://www.linkedin.com/in/yi-xuan-qi`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"src/Team/photos/yixuan.jpg"} name={"Yi Xuan Qi"} title={"Full Stack Developer"}/>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <Card imgsrc={"src/Team/photos/vera.jpg"} name={"Vera Fan"}/>
+                            <Link to={{ pathname:`https://www.linkedIn.com/in/VeraFanYunan`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"src/Team/photos/vera.jpg"} name={"Vera Fan"} title={"Data Scientist "}/>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <Card imgsrc={"src/Team/photos/chuntong.jpg"} name={"Chuntong Gao"}/>
+                            <Link to={{ pathname:`https://cgao.info`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"src/Team/photos/chuntong.jpg"} name={"Chuntong Gao"} title={"Web Developer"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>

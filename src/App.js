@@ -6,6 +6,7 @@ import ExplorePage from './Explore/ExplorePage';
 import PublicationsPage from './Publications/PublicationsPage';
 import TeamPage from './Team/TeamPage';
 import Home from './Home';
+import TutorialPage from './Tutorial/TutorialPage';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
             <div>
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        {/*<Home />*/}
+                        <TutorialPage></TutorialPage>
                     </Route>
                     <Route path="/csv">
                         <h2>hey</h2>
@@ -24,6 +26,9 @@ function App() {
                     </Route>
                     <Route path="/publications">
                         <PublicationsPage/>
+                    </Route>
+                    <Route path="/tutorial">
+                        <TutorialPage/>
                     </Route>
                     <Route path="/team">
                         <TeamPage />
