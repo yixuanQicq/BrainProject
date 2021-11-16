@@ -7,6 +7,7 @@ import PublicationsPage from './Publications/PublicationsPage';
 import TeamPage from './Team/TeamPage';
 import Home from './Home';
 import TutorialPage from './Tutorial/TutorialPage';
+import TutorialPage2 from './Tutorial/tutorialPage2';
 
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
             <div>
                 <Switch>
                     <Route exact path="/">
-                        {/*<Home />*/}
-                        <TutorialPage></TutorialPage>
+                        <Home />
                     </Route>
                     <Route path="/csv">
                         <h2>hey</h2>
@@ -29,6 +29,9 @@ function App() {
                     </Route>
                     <Route path="/tutorial">
                         <TutorialPage/>
+                    </Route>
+                    <Route path="/tutorial2">
+                        <TutorialPage2/>
                     </Route>
                     <Route path="/team">
                         <TeamPage />

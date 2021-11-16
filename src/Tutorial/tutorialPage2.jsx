@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../Home/Header';
 import Grid from '@material-ui/core/Grid';
-import Tutorial_1_html from './Tutorial_1_html';
 import "./tutorial.css"
 import { Link } from 'react-router-dom';
+import Tutorial_2_html from './Tutorial_2_html';
 
 
 
-export default function TutorialPage(props) {
+export default function TutorialPage2(props) {
     return (
         <section style={{backgroundColor: "white"}}>
             <Header></Header>
@@ -27,8 +27,8 @@ export default function TutorialPage(props) {
                 <Grid item xs={12} md={6}>
                     <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
                         <Grid>
-                            <h1>Tutorial</h1>
-                            <Tutorial_1_html></Tutorial_1_html>
+                            <h1>Tutorial Engima</h1>
+                            <Tutorial_2_html></Tutorial_2_html>
                         </Grid>
                     </Grid>
                 </Grid>

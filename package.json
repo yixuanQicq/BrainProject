@@ -14,11 +14,14 @@
     "rc-scroll-anim": "^2.0.2",
     "rc-tween-one": "^1.5.5",
     "react": "^16.1.1",
+    "react-copy-to-clipboard": "^5.0.4",
     "react-document-title": "^2.0.3",
     "react-dom": "16.14.0",
     "react-github-button": "^0.1.11",
     "react-router": "5.2.1",
     "react-router-dom": "5.3.0",
+    "react-syntax-highlighter": "^15.4.4",
+    "sass": "^1.43.4",
     "src": "^1.1.2"
   },
   "devDependencies": {
@@ -41,6 +44,7 @@
     "gh-pages": "^1.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "node-sass": "^6.0.1",
     "pre-commit": "^1.2.2",
     "prettier": "^2.0.5",
     "redbox-react": "^1.5.0"
