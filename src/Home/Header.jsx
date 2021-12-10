@@ -102,9 +102,9 @@ class Header extends React.Component {
                 ) : null}
                 <Row>
                     <Col xxl={4} xl={5} lg={8} md={8} sm={24} xs={24}>
-                        <div id="logo" to="/">
-                            <img src={LOGO_URL} alt="logo" />
-                        </div>
+                        {/*<div id="logo" to="/">*/}
+                        {/*    <img src={LOGO_URL} alt="logo" />*/}
+                        {/*</div>*/}
                     </Col>
                     {/*<Col></Col>*/}
                     <Col xxl={20} xl={19} lg={16} md={16} sm={0} xs={0}>
