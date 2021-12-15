@@ -5,7 +5,6 @@ import Parallax from 'rc-scroll-anim/lib/ScrollParallax';
 import TweenOne from 'rc-tween-one';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'antd';
 
 const { TweenOneGroup } = TweenOne;
 
@@ -52,27 +51,6 @@ const featuresCN = [
         link: 'https://enigma.ini.usc.edu/',
         shadowColor: 'rgba(114,46,209,.12)',
     }
-/*    {
-        title: 'Feature 7',
-        content: 'Some description goes here',
-        src: 'https://gw.alipayobjects.com/zos/rmsportal/pbmKMSFpLurLALLNliUQ.svg',
-        color: '#FA8C16',
-        shadowColor: 'rgba(250,140,22,.12)',
-    },
-    {
-        title: 'Feature 8',
-        content: 'Some description goes here',
-        src: 'https://gw.alipayobjects.com/zos/rmsportal/aLQyKyUyssIUhHTZqCIb.svg',
-        color: '#EB2F96',
-        shadowColor: 'rgba(235,45,150,.12)',
-    },
-    {
-        title: 'Feature 9',
-        content: 'Some description goes here',
-        src: 'https://gw.alipayobjects.com/zos/rmsportal/RpJIQitGbSCHwLMimybX.svg',
-        color: '#1890FF',
-        shadowColor: 'rgba(24,144,255,.12)',
-    },*/
 ];
 
 const pointPos = [

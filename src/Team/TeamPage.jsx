@@ -24,7 +24,7 @@ export default function TeamPage(props) {
                             </Link>
                         </div>
                         <div className="col-md-4">
-                            <Link to={{ pathname:`https://linkedin.com/in/yuetong-jordan-yu`}}  style={{ textDecoration: `none` }} target="_blank">
+                            <Link to={{ pathname:`https://keck.usc.edu/faculty-search/paul-m-thompson/`}}  style={{ textDecoration: `none` }} target="_blank">
                                 <Card imgsrc={"src/Team/photos/Paull.png"} name={"Paul Thompson"} title={"Data Scientist"}/>
                             </Link>
                         </div>
@@ -64,7 +64,7 @@ export default function TeamPage(props) {
                             </Link>
                         </div>
                         <div className="col-md-4">
-                            <Link to={{ pathname:`https://linkedin.com/in/yuetong-jordan-yu`}}  style={{ textDecoration: `none` }} target="_blank">
+                            <Link to={{ pathname: `https://www.linkedin.com/in/faye-new`}}  style={{ textDecoration: `none` }} target="_blank">
                                 <Card imgsrc={"src/Team/photos/Faye.jpg"} name={"Faye New"} title={"Cognitive Neuroscientist "}/>
                             </Link>
                         </div>
