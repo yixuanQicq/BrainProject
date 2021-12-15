@@ -37,7 +37,7 @@ export default function PublicationsPage(props) {
         <div>
             <Header></Header>
             <Box sx={{ m: 3 }}>
-                <Typography variant="h4">Publication Page</Typography>
+                <Typography variant="h4">Publications</Typography>
                 <div>
                     {publications.map((publication) => <Publication key={publication.id} {...publication} />)}
                 </div>

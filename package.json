@@ -9,6 +9,7 @@
     "antd": "^2.13.10",
     "bootstrap": "^5.1.2",
     "enquire-js": "^0.1.0",
+    "enquire.js": "^2.1.6",
     "prop-types": "^15.6.0",
     "rc-queue-anim": "^1.4.0",
     "rc-scroll-anim": "^2.0.2",
