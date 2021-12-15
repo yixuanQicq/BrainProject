@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import ContactPage from './Contact/ContactPage';
 import Privacy from './Contact/PrivacyPage';
 import ExplorePage from './Explore/ExplorePage';
@@ -8,6 +8,7 @@ import TeamPage from './Team/TeamPage';
 import Home from './Home';
 import TutorialPage from './Tutorial/TutorialPage';
 import TutorialPage2 from './Tutorial/tutorialPage2';
+import ExplorePage2 from './Explore/ExplorePage2';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
                     </Route>
                     <Route path="/explore">
                         <ExplorePage/>
+                    </Route>
+                    <Route path="/explore2">
+                        <ExplorePage2/>
                     </Route>
                     <Route path="/publications">
                         <PublicationsPage/>

@@ -10,6 +10,7 @@
     "bootstrap": "^5.1.2",
     "enquire-js": "^0.1.0",
     "enquire.js": "^2.1.6",
+    "express": "^4.17.1",
     "prop-types": "^15.6.0",
     "rc-queue-anim": "^1.4.0",
     "rc-scroll-anim": "^2.0.2",
@@ -68,7 +69,7 @@
     "lint": "eslint --ext .js,.jsx src/",
     "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{js,jsx,css,less}\"",
     "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{js,jsx,css,less}\"",
-    "start": "dora --plugins webpack",
+    "start": "Node app",
     "test": "atool-test-mocha ./**/__tests__/*-test.js"
   }
 }
