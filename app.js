@@ -3,6 +3,7 @@ const app = express();
 
 const path = require('path');
 
+const host = `0.0.0.0`;
 const port = process.env.PORT || 8000;
 
 if (process.env.NODE_ENV === "production") {
@@ -12,7 +13,7 @@ if (process.env.NODE_ENV === "production") {
     })
 }
 
-app.listen(port, (err) => {
+app.listen(port, host, (err) => {
     if (err) return console.log(err);
     console.log("Server running on port: ", port);
 })
