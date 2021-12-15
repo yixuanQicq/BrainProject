@@ -1,0 +1,53 @@
+nav{
+    position: relative;
+    margin: 50px auto 0;
+    width: 700px;
+    height: 50px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    /*background: #2383de;*/
+    background: #659bdf;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+    text-decoration: white !important;
+}
+
+nav .start-centileModel,a:nth-child(1):hover~.animation {
+    width: 350px;
+    left: 0;
+}
+
+nav .start-ownData,a:nth-child(2):hover~.animation {
+    width: 350px;
+    left: 350px;
+}
+
+
