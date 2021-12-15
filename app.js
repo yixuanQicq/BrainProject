@@ -9,9 +9,13 @@ const port = process.env.PORT || 8000;
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("dist"));
     app.get("*", (req, res) => {
-        req.sendFile(path.resolve(__dirname, "build", "index.html"))
+        req.sendFile(path.join(__dirname, "dist", "index.html"));
     })
 }
+
+app.get("*", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
 
 app.listen(port, host, (err) => {
     if (err) return console.log(err);

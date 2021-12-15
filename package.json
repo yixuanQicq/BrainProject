@@ -69,7 +69,7 @@
     "lint": "eslint --ext .js,.jsx src/",
     "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{js,jsx,css,less}\"",
     "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{js,jsx,css,less}\"",
-    "start": "Node app",
+    "start": "dora --plugins webpack",
     "test": "atool-test-mocha ./**/__tests__/*-test.js"
   }
 }

@@ -7,6 +7,7 @@ module.exports = function(webpackConfig) {
     libraryName: 'antd',
     style: 'css',
   }]);
-  webpackConfig.plugins = webpackConfig.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin')
+
+  webpackConfig.plugins = webpackConfig.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin');
   return webpackConfig;
 };

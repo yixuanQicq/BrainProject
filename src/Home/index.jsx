@@ -14,7 +14,7 @@ class Home extends React.PureComponent {
 
     render() {
         return (
-            <DocumentTitle title="Brain Project">
+            <DocumentTitle title="CentileBrain">
                 <div>
                     <Header/>
                     <div className="home-wrapper">
