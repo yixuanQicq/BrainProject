@@ -15,6 +15,16 @@ export default function TutorialPage3(props) {
                 <Link to='/tutorial3'className="tutorial3" style={{width: "233px"}}><span>Surface area</span></Link>
                 <div className="animation start-area"></div>
             </nav>
+            <Grid container spacing={3} alignContent={"center"}>
+                <Grid item xs={12} md={12} alignContent={"center"}>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div>
+                        <h2 align={"center"}>Coming Soon</h2>
+                    </div>
+                </Grid>
+            </Grid>
         </section>
     );
 }

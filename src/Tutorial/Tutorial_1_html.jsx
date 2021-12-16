@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-const __html = require('./tutorial_draft.html.js');
+const __html = require('./tutorial1.html.js');
 const template = { __html: __html };
 
 class Tutorial_1_html extends Component {

@@ -15,18 +15,15 @@ export default function TutorialPage2(props) {
                 <Link to='/tutorial3'className="tutorial3" style={{width: "233px"}}><span>Surface area</span></Link>
                 <div className="animation start-thickness"></div>
             </nav>
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={2} >
-                </Grid>
-                <Grid item xs={12} md={8}>
-                    <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
-                        <Grid>
-                            <h1>Tutorial Engima</h1>
-                            <Tutorial_2_html></Tutorial_2_html>
-                        </Grid>
-                    </Grid>
-                </Grid>
-                <Grid item xs={12} md={2}>
+
+            <Grid container spacing={3} alignContent={"center"}>
+                <Grid item xs={12} md={12} alignContent={"center"}>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div>
+                        <h2 align={"center"}>Coming Soon</h2>
+                    </div>
                 </Grid>
             </Grid>
         </section>

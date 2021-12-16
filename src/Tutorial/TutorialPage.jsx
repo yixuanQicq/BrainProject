@@ -21,7 +21,10 @@ export default function TutorialPage(props) {
                 <Grid item xs={12} md={8}>
                     <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
                         <Grid>
-                            <h1>Tutorial</h1>
+                            <br/>
+                            <h1>Model Generation and Application</h1>
+                            <h2>(subcortical volumes)</h2>
+                            <br/>
                             <Tutorial_1_html></Tutorial_1_html>
                         </Grid>
                     </Grid>
