@@ -3,14 +3,14 @@ import Grid from '@material-ui/core/Grid';
 
 export default function Graphs(props) {
     function renderSwitchLeft() {
-        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/";
+        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
         if (props.gender === ``) {
             return "";
         }
         if (props.gender === "female" && props.MFPCurve) {
             filePath = filePath + "src/Explore/femaleMFP";
         } if (props.gender === "female" && !props.MFPCurve) {
-            filePath = "female CentileCurve";
+            filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && props.MFPCurve) {
             filePath = "male MFPCurve";
         } if (props.gender === "male" && !props.MFPCurve){
@@ -37,14 +37,14 @@ export default function Graphs(props) {
     }
 
     function renderSwitchRight() {
-        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/";
+        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
         if (props.gender === ``) {
             return "";
         }
         if (props.gender === "female" && props.MFPCurve) {
             filePath = filePath + "src/Explore/femaleMFP";
         } if (props.gender === "female" && !props.MFPCurve) {
-            filePath = "female CentileCurve";
+            filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && props.MFPCurve) {
             filePath = "male MFPCurve";
         } if (props.gender === "male" && !props.MFPCurve){
@@ -76,12 +76,12 @@ export default function Graphs(props) {
             <Grid item xs={12} md={1}></Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <img style={{width: '100%'}} src={renderSwitchLeft()}></img>
+                    <img hidden={props.isHidden} style={{width: '100%'}} src={renderSwitchLeft()}></img>
                 </div>
             </Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <img style={{width: '100%'}} src={renderSwitchLeft()}></img>
+                    <img hidden={props.isHidden} style={{width: '100%'}} src={renderSwitchRight()}></img>
                 </div>
             </Grid>
             <Grid item xs={12} md={1}></Grid>

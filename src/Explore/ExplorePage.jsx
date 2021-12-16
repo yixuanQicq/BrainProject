@@ -239,8 +239,7 @@ export default function ExplorePage(props) {
                 <Grid item xs={12} md={1}/>
             </Grid>
 
-            <Graphs
-                gender={gender} value={volumes} MFPCurve={MFPCurve} hidden={morphometric !== "volumes"}></Graphs>
+            <Graphs gender={gender} value={volumes} MFPCurve={MFPCurve} isHidden={morphometric !== "volumes"} hidden={morphometric !== "volumes"}></Graphs>
 
             {/*Coming Soon Tab*/}
             <Grid container spacing={3} alignContent={"center"} hidden={morphometric === '' || morphometric === "volumes"}>

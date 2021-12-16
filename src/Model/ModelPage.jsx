@@ -14,9 +14,9 @@ export default function ModelPage(props) {
         <sections>
             <Header></Header>
             <nav>
-                <Link to='/model'><span>Generate Normative Deviation Values for Your Data</span></Link>
                 <Link to='/model2'><span>CentileBrain</span></Link>
-                <div className="animation start-centileModel"></div>
+                <Link to='/model'><span>Generate Normative Deviation Values for Your Data</span></Link>
+                <div className="animation start-ownData"></div>
             </nav>
             <Grid container spacing={3} alignContent={"center"}>
                 <Grid item xs={12} md={12} alignContent={"center"}>
