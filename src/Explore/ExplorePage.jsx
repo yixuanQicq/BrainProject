@@ -3,7 +3,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Home/Header';
 import { Link } from 'react-router-dom';
 import "./explore.css"
-import { Box, FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
+import {
+    Box,
+    FormControl,
+    FormControlLabel,
+    FormGroup,
+    FormLabel,
+    InputLabel,
+    MenuItem,
+    Select,
+    Switch
+} from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
 }));
@@ -30,6 +40,11 @@ export default function ExplorePage(props) {
     const handleAreaChange = (event) => {
         setArea(event.target.value);
     };
+    const [MFPCurve, setMFPCurve] = React.useState(true);
+    const handleCurveChange = (event) => {
+        setMFPCurve(!MFPCurve);
+    };
+
 
     return (
         <sections>
@@ -41,8 +56,8 @@ export default function ExplorePage(props) {
             </nav>
             <br/>
             <br/>
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={2}> </Grid>
+            <Grid container spacing={3} alignItems={"center"}>
+                <Grid item xs={12} md={1}> </Grid>
                 <Grid item xs={12} md={3}>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
@@ -199,12 +214,36 @@ export default function ExplorePage(props) {
                         </FormControl>
                     </Box>
                 </Grid>
-                <Grid item xs={12} md={2}/>
+
+                <Grid item xs={12} md={1}>
+                    <FormControl component="fieldset" variant="standard">
+                        <FormLabel component="legend">Curves</FormLabel>
+                        <FormGroup>
+                            <FormControlLabel
+                                control={
+                                    <Switch checked={MFPCurve} onChange={handleCurveChange} color="primary" name="mfp" />
+                                }
+                                label="MFP Regression"
+                            />
+                            <FormControlLabel
+                                control={
+                                    <Switch checked={!MFPCurve} onChange={handleCurveChange} color="primary" name="centile" />
+                                }
+                                label="Centile"
+                            />
+                        </FormGroup>
+                    </FormControl>
+                </Grid>
+
+                <Grid item xs={12} md={1}/>
             </Grid>
 
 
             <Grid container spacing={3} alignContent={"center"} hidden={morphometric === '' || morphometric === "volumes"}>
                 <Grid item xs={12} md={12} alignContent={"center"}>
+                    <br/>
+                    <br/>
+                    <br/>
                     <div>
                         <h2 align={"center"}>Coming Soon</h2>
                     </div>

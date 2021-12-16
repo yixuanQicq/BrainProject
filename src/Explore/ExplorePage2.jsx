@@ -12,7 +12,6 @@ export default function ExplorePage2(props) {
     return (
         <sections>
             <Header></Header>
-            <br/>
             <nav>
                 <Link to='/explore'><span>Visualize Regional Age-Related Curves</span></Link>
                 <Link to='/explore2'><span>CentileBrain Data Vault</span></Link>
