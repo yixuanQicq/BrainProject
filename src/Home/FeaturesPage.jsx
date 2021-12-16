@@ -20,14 +20,14 @@ const featuresCN = [
         title: "Use CentileBrain to Generate Estimates",
         src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1251018502%20Upload.svg',
         color: '#2F54EB',
-        link: "",
+        link: "/explore",
         shadowColor: 'rgba(47,84,235,.12)',
     },
     {
         title: 'The CentileBrain Model',
         src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1155106799_Model.svg',
         color: '#F5222D',
-        link: "",
+        link: "/tutorial",
         shadowColor: 'rgba(245,34,45,.12)',
     },
     {

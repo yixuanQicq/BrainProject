@@ -15,6 +15,8 @@ import {
     Switch
 } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import MFP_Female_1 from './volume_mfp_female/mfp_female_1';
+import MFP_Female_2 from './volume_mfp_female/mfp_female_2';
 const useStyles = makeStyles((theme) => ({
 }));
 
@@ -238,7 +240,21 @@ export default function ExplorePage(props) {
                 <Grid item xs={12} md={1}/>
             </Grid>
 
+            <Grid container spacing={3} >
+                <Grid item xs={12} md={1}>
+                </Grid>
+                <Grid item xs={12} md={5}>
+                    <MFP_Female_1></MFP_Female_1>
+                </Grid>
+                <Grid item xs={12} md={5}>
+                    <MFP_Female_2></MFP_Female_2>
+                </Grid>
+                <Grid item xs={12} md={1}>
+                </Grid>
+            </Grid>
 
+
+            {/*Coming Soon Tab*/}
             <Grid container spacing={3} alignContent={"center"} hidden={morphometric === '' || morphometric === "volumes"}>
                 <Grid item xs={12} md={12} alignContent={"center"}>
                     <br/>

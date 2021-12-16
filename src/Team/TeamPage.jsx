@@ -25,7 +25,7 @@ export default function TeamPage(props) {
                         </div>
                         <div className="col-md-4">
                             <Link to={{ pathname:`/paul`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Paull.png"} name={"Paul Thompson"} title={"Data Scientist"}/>
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Paull.png"} name={"Dr. Paul Thompson"} title={"Data Scientist"}/>
                             </Link>
                         </div>
                         <div className="col-md-4">
