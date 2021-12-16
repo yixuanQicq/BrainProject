@@ -12,7 +12,7 @@ export default function Graphs(props) {
         } if (props.gender === "female" && !props.MFPCurve) {
             filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && props.MFPCurve) {
-            filePath = "male MFPCurve";
+            filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && !props.MFPCurve){
             filePath = "male CentileCurve";
         }
@@ -46,7 +46,7 @@ export default function Graphs(props) {
         } if (props.gender === "female" && !props.MFPCurve) {
             filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && props.MFPCurve) {
-            filePath = "male MFPCurve";
+            filePath = filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && !props.MFPCurve){
             filePath = "male CentileCurve";
         }
