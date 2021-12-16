@@ -11,44 +11,44 @@ const { TweenOneGroup } = TweenOne;
 const featuresCN = [
     {
         title: 'Explore the CentileBrain Dataset',
-        src: 'src/Home/data/explore2.svg',
+        src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/explore2.svg',
         color: '#13C2C2',
         link: "/explore",
         shadowColor: 'rgba(19,194,194,.12)',
     },
     {
         title: "Use CentileBrain to Generate Estimates",
-        src: 'src/Home/data/iStock-1251018502 Upload.svg',
+        src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1251018502%20Upload.svg',
         color: '#2F54EB',
         link: "",
         shadowColor: 'rgba(47,84,235,.12)',
     },
     {
         title: 'The CentileBrain Model',
-        src: 'src/Home/data/iStock-1155106799_Model.svg',
+        src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1155106799_Model.svg',
         color: '#F5222D',
         link: "",
         shadowColor: 'rgba(245,34,45,.12)',
     },
     {
         title: 'CentileBrain Development Team',
-        src: 'src/Home/data/iStock-966858736_Team.svg',
+        src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-966858736_Team.svg',
         color: '#1AC44D',
         link: "/team",
         shadowColor: 'rgba(26,196,77,.12)',
     },
     {
         title: 'CentileBrain Publications',
-        src: 'src/Home/data/iStock-1323841513 publications.svg',
+        src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1323841513%20publications.svg',
         color: '#FAAD14',
         link: "/publications",
         shadowColor: 'rgba(250,173,20,.12)',
     },
     {
         title: 'Learn More About ENIGMA Consortium',
-        src: 'src/Home/data/enigma.jpeg',
+        src: 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Home/data/enigma.jpeg',
         color: '#722ED1',
-        link: 'https://enigma.ini.usc.edu/',
+        link: '/engima',
         shadowColor: 'rgba(114,46,209,.12)',
     }
 ];

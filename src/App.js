@@ -46,6 +46,43 @@ function App() {
                     <Route path="/privacy">
                         <Privacy/>
                     </Route>
+                    <Route path='/engima' component={() => {
+                        window.location.href = 'https://enigma.ini.usc.edu/';
+                        return null;
+                    }}/>
+                    <Route path='/sophia' component={() => {
+                        window.location.href = 'https://www.centreforbrainhealth.ca/frangou-sophia';
+                        return null;
+                    }}/>
+                    <Route path='/paul' component={() => {
+                        window.location.href = 'https://keck.usc.edu/faculty-search/paul-m-thompson/';
+                        return null;
+                    }}/>
+                    <Route path='/ruiyang' component={() => {
+                        window.location.href = 'https://www.researchgate.net/profile/Ruiyang-Ge';
+                        return null;
+                    }}/>
+                    <Route path='/yuetong' component={() => {
+                        window.location.href = 'https://linkedin.com/in/yuetong-jordan-yu';
+                        return null;
+                    }}/>
+                    <Route path='/vera' component={() => {
+                        window.location.href = 'https://www.linkedIn.com/in/VeraFanYunan';
+                        return null;
+                    }}/>
+                    <Route path='/chuntong' component={() => {
+                        window.location.href = 'https://cgao.info';
+                        return null;
+                    }}/>
+                    <Route path='/yixuan' component={() => {
+                        window.location.href = 'https://www.linkedin.com/in/yi-xuan-qi';
+                        return null;
+                    }}/>
+                    <Route path='/faye' component={() => {
+                        window.location.href = 'https://www.linkedin.com/in/faye-new';
+                        return null;
+                    }}/>
+
                 </Switch>
             </div>
         </Router>
