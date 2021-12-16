@@ -6763,7 +6763,6 @@ nav .animation {
     border-radius: 8px;
     -webkit-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
-    text-decoration: white !important;
 }
 
 nav .start-centileModel,a:nth-child(1):hover~.animation {
@@ -20816,6 +20815,62 @@ footer .footer-flag {
     height: 648px;
   }
 }
+.tutorialNav{
+    position: relative;
+    margin: 50px auto 0;
+    width: 700px;
+    height: 50px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.tutorialLink{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 233px;
+    text-align: center;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #659bdf;
+    border-radius: 8px;
+    /*transition: all .5s ease 0s !important;*/
+}
+
+nav .start-volume,.tutorial1:hover~.animation {
+    width: 233px !important;
+    left: 0 !important;
+}
+
+nav .start-thickness,.tutorial2:hover~.animation {
+    width: 233px !important;
+    left: 233px !important;
+}
+
+nav .start-area,.tutorial3:hover~.animation {
+    width: 233px !important;
+    left: 466px !important;
+}
+
+
 nav{
     position: relative;
     margin: 50px auto 0;
@@ -20856,7 +20911,6 @@ nav .animation {
     border-radius: 8px;
     -webkit-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
-    text-decoration: white !important;
 }
 
 nav .start-centileModel,a:nth-child(1):hover~.animation {
