@@ -39,6 +39,11 @@ export default function TeamPage(props) {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
+                            <Link to={{ pathname:`/yixuan`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yixuan.jpg"} name={"Yi Xuan Qi"} title={"Full Stack Developer"}/>
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
                             <Link to={{ pathname:`/yuetong`}}  style={{ textDecoration: `none` }} target="_blank">
                                 <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yuetong.jpg"} name={"Yuetong Yu"} title={"Data Scientist"}/>
                             </Link>
@@ -48,19 +53,15 @@ export default function TeamPage(props) {
                                 <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/vera.jpg"} name={"Vera Fan"} title={"Data Scientist "}/>
                             </Link>
                         </div>
-                        <div className="col-md-4">
-                            <Link to={{ pathname:`/chuntong`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/chuntong.jpg"} name={"Chuntong Gao"} title={"Web Developer"}/>
-                            </Link>
-                        </div>
+
                     </div>
                 </div>
 
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
-                            <Link to={{ pathname:`/yixuan`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yixuan.jpg"} name={"Yi Xuan Qi"} title={"Full Stack Developer"}/>
+                            <Link to={{ pathname:`/chuntong`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/chuntong.jpg"} name={"Chuntong Gao"} title={"Web Developer"}/>
                             </Link>
                         </div>
                         <div className="col-md-4">

@@ -5,30 +5,18 @@ import Tutorial_1_html from './Tutorial_1_html';
 import "./tutorial.css"
 import { Link } from 'react-router-dom';
 
-
-
 export default function TutorialPage(props) {
     return (
         <section style={{backgroundColor: "white"}}>
             <Header></Header>
-            <br/>
-            <nav>
-                <Link to='/tutorial'><span>Use the CentileBrain Model </span></Link>
-                <Link to='/tutorial2'><span>Applying CentileBrain Model to Your Own Data </span></Link>
-                <div className="animation start-centileModel"></div>
+            <nav className="tutorialNav">
+                <Link to='/tutorial' className="tutorial1" style={{width: "233px"}}><span>Subcortical Volume</span></Link>
+                <Link to='/tutorial2'className="tutorial2" style={{width: "233px"}}><span>Cortical Thickness</span></Link>
+                <Link to='/tutorial3'className="tutorial3" style={{width: "233px"}}><span>Surface area</span></Link>
+                <div className="animation start-volume"></div>
             </nav>
-            <br/>
-            <br/>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={2} >
-                    {/*<Grid container direction="row" justify="center" alignItems="center">*/}
-                    {/*    <nav aria-label="Page table of contents"><p>Contents</p>*/}
-                    {/*        <ul>*/}
-                    {/*            <li><Link to='/tutorial'><span>Tutorial</span></Link></li>*/}
-                    {/*            <li><Link to='/tutorial2'><span>Tutorial Enigma</span></Link></li>*/}
-                    {/*        </ul>*/}
-                    {/*    </nav>*/}
-                    {/*</Grid>*/}
                 </Grid>
                 <Grid item xs={12} md={8}>
                     <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">

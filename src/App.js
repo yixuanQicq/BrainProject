@@ -9,6 +9,9 @@ import Home from './Home';
 import TutorialPage from './Tutorial/TutorialPage';
 import TutorialPage2 from './Tutorial/tutorialPage2';
 import ExplorePage2 from './Explore/ExplorePage2';
+import ModelPage from './Model/ModelPage';
+import ModelPage2 from './Model/ModelPage2';
+import TutorialPage3 from './Tutorial/TutorialPage3';
 
 
 function App() {
@@ -36,6 +39,15 @@ function App() {
                     </Route>
                     <Route path="/tutorial2">
                         <TutorialPage2/>
+                    </Route>
+                    <Route path="/tutorial3">
+                        <TutorialPage3/>
+                    </Route>
+                    <Route path="/model">
+                        <ModelPage/>
+                    </Route>
+                    <Route path="/model2">
+                        <ModelPage2/>
                     </Route>
                     <Route path="/team">
                         <TeamPage />

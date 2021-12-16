@@ -1,4 +1,4 @@
-nav{
+.tutorialNav{
     position: relative;
     margin: 50px auto 0;
     width: 700px;
@@ -7,7 +7,7 @@ nav{
     border-radius: 8px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
-nav a{
+.tutorialLink{
     font-size: 15px;
     color: black;
     text-decoration: none;
@@ -15,7 +15,7 @@ nav a{
     position: relative;
     z-index: 1;
     display: inline-block;
-    width: 350px;
+    width: 233px;
     text-align: center;
 }
 
@@ -33,21 +33,24 @@ nav .animation {
     height: 100%;
     top: 0;
     z-index: 0;
-    /*background: #2383de;*/
     background: #659bdf;
     border-radius: 8px;
-    transition: all .5s ease 0s;
-    text-decoration: white !important;
+    /*transition: all .5s ease 0s !important;*/
 }
 
-nav .start-centileModel,a:nth-child(1):hover~.animation {
-    width: 350px;
-    left: 0;
+nav .start-volume,.tutorial1:hover~.animation {
+    width: 233px !important;
+    left: 0 !important;
 }
 
-nav .start-ownData,a:nth-child(2):hover~.animation {
-    width: 350px;
-    left: 350px;
+nav .start-thickness,.tutorial2:hover~.animation {
+    width: 233px !important;
+    left: 233px !important;
+}
+
+nav .start-area,.tutorial3:hover~.animation {
+    width: 233px !important;
+    left: 466px !important;
 }
 
 
