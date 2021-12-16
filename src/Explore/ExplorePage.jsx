@@ -15,8 +15,7 @@ import {
     Switch
 } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import MFP_Female_1 from './volume_mfp_female/mfp_female_1';
-import MFP_Female_2 from './volume_mfp_female/mfp_female_2';
+import Graphs from './Graphs';
 const useStyles = makeStyles((theme) => ({
 }));
 
@@ -231,7 +230,7 @@ export default function ExplorePage(props) {
                                 control={
                                     <Switch checked={!MFPCurve} onChange={handleCurveChange} color="primary" name="centile" />
                                 }
-                                label="Centile"
+                                label="Centile Curve"
                             />
                         </FormGroup>
                     </FormControl>
@@ -240,19 +239,8 @@ export default function ExplorePage(props) {
                 <Grid item xs={12} md={1}/>
             </Grid>
 
-            <Grid container spacing={3} >
-                <Grid item xs={12} md={1}>
-                </Grid>
-                <Grid item xs={12} md={5}>
-                    <MFP_Female_1></MFP_Female_1>
-                </Grid>
-                <Grid item xs={12} md={5}>
-                    <MFP_Female_2></MFP_Female_2>
-                </Grid>
-                <Grid item xs={12} md={1}>
-                </Grid>
-            </Grid>
-
+            <Graphs
+                gender={gender} value={volumes} MFPCurve={MFPCurve} hidden={morphometric !== "volumes"}></Graphs>
 
             {/*Coming Soon Tab*/}
             <Grid container spacing={3} alignContent={"center"} hidden={morphometric === '' || morphometric === "volumes"}>
