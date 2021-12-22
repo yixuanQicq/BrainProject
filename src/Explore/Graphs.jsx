@@ -10,11 +10,11 @@ export default function Graphs(props) {
         if (props.gender === "female" && props.MFPCurve) {
             filePath = filePath + "src/Explore/femaleMFP";
         } if (props.gender === "female" && !props.MFPCurve) {
-            filePath = filePath + "src/Explore/maleMFP";
+            filePath = filePath + "src/Explore/femaleCentile";
         } if (props.gender === "male" && props.MFPCurve) {
             filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && !props.MFPCurve){
-            filePath = "male CentileCurve";
+            filePath =  filePath + "src/Explore/maleCentile";
         }
         switch(props.value) {
             case 'thalamus':
@@ -44,11 +44,11 @@ export default function Graphs(props) {
         if (props.gender === "female" && props.MFPCurve) {
             filePath = filePath + "src/Explore/femaleMFP";
         } if (props.gender === "female" && !props.MFPCurve) {
-            filePath = filePath + "src/Explore/maleMFP";
+            filePath = filePath + "src/Explore/femaleCentile";
         } if (props.gender === "male" && props.MFPCurve) {
-            filePath = filePath = filePath + "src/Explore/maleMFP";
+            filePath = filePath + "src/Explore/maleMFP";
         } if (props.gender === "male" && !props.MFPCurve){
-            filePath = "male CentileCurve";
+            filePath =  filePath + "src/Explore/maleCentile";
         }
         switch(props.value) {
             case 'thalamus':
