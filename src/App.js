@@ -94,6 +94,10 @@ function App() {
                         window.location.href = 'https://www.linkedin.com/in/faye-new';
                         return null;
                     }}/>
+                    <Route path='/shalaila' component={() => {
+                        window.location.href = 'https://www.ncbi.nlm.nih.gov/myncbi/shalaila.haas.1/bibliography/public/';
+                        return null;
+                    }}/>
 
                 </Switch>
             </div>
