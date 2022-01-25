@@ -57,7 +57,7 @@ export default function ContactPage(props) {
         'description': 'We\'re here to answer questions and discuss your experience.',
         'terms': 'I agree to the terms of use and privacy policy.',
         'primary-action': 'Submit',
-        'image': 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Home/data/explore1.jpg',
+        'image': 'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Contact/contact.png',
         ...props.content
     };
 
