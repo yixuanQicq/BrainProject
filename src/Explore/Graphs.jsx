@@ -3,8 +3,16 @@ import Grid from '@material-ui/core/Grid';
 import Iframe from 'react-iframe';
 
 export default function Graphs(props) {
+
+    function renderWidth() {
+        if (props.hidden) {
+            return "0px";
+        }
+        return "100%";
+    }
+
     function renderSwitchLeft() {
-        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
+        let filePath = "";
         if (props.gender === ``) {
             return "";
         }
@@ -19,26 +27,26 @@ export default function Graphs(props) {
         }
         switch(props.value) {
             case 'thalamus':
-                return filePath + '/1.png';
+                return filePath + '/1.html';
             case 'caudate':
-                return filePath + '/3.png';
+                return filePath + '/3.html';
             case 'putamen':
-                return filePath + '/5.png';
+                return filePath + '/5.html';
             case 'pallidum':
-                return filePath + '/7.png';
+                return filePath + '/7.html';
             case 'hippocampus':
-                return filePath + '/9.png';
+                return filePath + '/9.html';
             case 'amygdala':
-                return filePath + '/11.png';
+                return filePath + '/11.html';
             case 'nucleusaccumbens':
-                return filePath + '/13.png';
+                return filePath + '/13.html';
             default:
                 return "";
         }
     }
 
     function renderSwitchRight() {
-        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
+        let filePath = "";
         if (props.gender === ``) {
             return "";
         }
@@ -53,19 +61,19 @@ export default function Graphs(props) {
         }
         switch(props.value) {
             case 'thalamus':
-                return filePath + '/2.png';
+                return filePath + '/2.html';
             case 'caudate':
-                return filePath + '/4.png';
+                return filePath + '/4.html';
             case 'putamen':
-                return filePath + '/6.png';
+                return filePath + '/6.html';
             case 'pallidum':
-                return filePath + '/8.png';
+                return filePath + '/8.html';
             case 'hippocampus':
-                return filePath + '/10.png';
+                return filePath + '/10.html';
             case 'amygdala':
-                return filePath + '/12.png';
+                return filePath + '/12.html';
             case 'nucleusaccumbens':
-                return filePath + '/14.png';
+                return filePath + '/14.html';
             default:
                 return "";
         }
@@ -78,13 +86,12 @@ export default function Graphs(props) {
 
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <Iframe url={renderSwitchLeft()} width="100%" height="300px"></Iframe>
-                    {/*<img hidden={props.isHidden} style={{width: '100%'}} src={renderSwitchLeft()}></img>*/}
+                    <Iframe url={renderSwitchLeft()} width={renderWidth()} height="300px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <img hidden={props.isHidden} style={{width: '100%'}} src={renderSwitchRight()}></img>
+                    <Iframe url={renderSwitchRight()} width={renderWidth()} height="300px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={1}></Grid>

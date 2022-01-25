@@ -23,7 +23,6 @@ export default function TutorialPage(props) {
                         <Grid>
                             <br/>
                             <h1>Model Generation and Application</h1>
-                            <h2>(subcortical volumes)</h2>
                             <br/>
                             <Tutorial_1_html></Tutorial_1_html>
                         </Grid>
