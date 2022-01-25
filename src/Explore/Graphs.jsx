@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Iframe from 'react-iframe';
 
 export default function Graphs(props) {
     function renderSwitchLeft() {
@@ -74,9 +75,11 @@ export default function Graphs(props) {
     return(
         <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
             <Grid item xs={12} md={1}></Grid>
+
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <img hidden={props.isHidden} style={{width: '100%'}} src={renderSwitchLeft()}></img>
+                    <Iframe url={renderSwitchLeft()} width="100%" height="300px"></Iframe>
+                    {/*<img hidden={props.isHidden} style={{width: '100%'}} src={renderSwitchLeft()}></img>*/}
                 </div>
             </Grid>
             <Grid item xs={12} md={5}>
