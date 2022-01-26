@@ -13,7 +13,6 @@ import ModelPage from './Model/ModelPage';
 import ModelPage2 from './Model/ModelPage2';
 import TutorialPage3 from './Tutorial/TutorialPage3';
 
-
 function App() {
     return (
         <Router>

@@ -3,6 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import Iframe from 'react-iframe';
 
 export default function Graphs(props) {
+    let html1;
+    let html2;
 
     function renderWidth() {
         if (props.hidden) {
@@ -12,7 +14,8 @@ export default function Graphs(props) {
     }
 
     function renderSwitchLeft() {
-        let filePath = "../";
+        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
+        //let filePath = "";
         if (props.gender === ``) {
             return "";
         }
@@ -46,7 +49,7 @@ export default function Graphs(props) {
     }
 
     function renderSwitchRight() {
-        let filePath = "../";
+        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
         if (props.gender === ``) {
             return "";
         }
@@ -79,19 +82,35 @@ export default function Graphs(props) {
         }
     }
 
+    function renderHtmlLeft(url) {
+        if(url) {
+            fetch(url).then(async fileText => html1 = await fileText.text()).then(() => {
+                    document.getElementsByTagName('iframe')[0].src=URL.createObjectURL(new Blob([html1], {type :'text/html'}));
+                }
+            );
+        }
+    }
+
+    function renderHtmlRight(url) {
+        if(url) {
+            fetch(url).then(async fileText => html2 = await fileText.text()).then(() => {
+                    document.getElementsByTagName('iframe')[1].src=URL.createObjectURL(new Blob([html2], {type :'text/html'}));
+                }
+            );
+        }
+    }
 
     return(
         <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
             <Grid item xs={12} md={1}></Grid>
-
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <Iframe url={renderSwitchLeft()} width={renderWidth()} height="300px"></Iframe>
+                    <Iframe url={renderHtmlLeft(renderSwitchLeft())} width={renderWidth()} height="300px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <Iframe url={renderSwitchRight()} width={renderWidth()} height="300px"></Iframe>
+                    <Iframe url={renderHtmlRight(renderSwitchRight())} width={renderWidth()} height="300px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={1}></Grid>
