@@ -12,7 +12,7 @@ export default function Graphs(props) {
     }
 
     function renderSwitchLeft() {
-        let filePath = "/";
+        let filePath = "../";
         if (props.gender === ``) {
             return "";
         }
@@ -46,7 +46,7 @@ export default function Graphs(props) {
     }
 
     function renderSwitchRight() {
-        let filePath = "/";
+        let filePath = "../";
         if (props.gender === ``) {
             return "";
         }
