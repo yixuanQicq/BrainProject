@@ -39,8 +39,13 @@ export default function TeamPage(props) {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
-                            <Link to={{ pathname:`/yixuan`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yixuan.jpg"} name={"Yi Xuan Qi"} title={"Full Stack Developer"}/>
+                            <Link to={{ pathname: `/shalaila`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Shalaila.jpg"} name={"Dr. Shalaila Hass"} title={"Neuroscientist"}/>
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to={{ pathname:`/amirhossein`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Amirhossein.jpeg"} name={"Dr Amirhossein Modabbernia"} title={"Clinical Neuroscientis"}/>
                             </Link>
                         </div>
                         <div className="col-md-4">
@@ -48,9 +53,24 @@ export default function TeamPage(props) {
                                 <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yuetong.jpg"} name={"Yuetong Yu"} title={"Data Scientist"}/>
                             </Link>
                         </div>
+                    </div>
+                </div>
+
+                <div className="container-fluid d-flex justify-content-center">
+                    <div className="row">
                         <div className="col-md-4">
-                            <Link to={{ pathname:`/shalaila`}}  style={{ textDecoration: `none` }} target="_blank">
+                            <Link to={{ pathname:`/yixuan`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yixuan.jpg"} name={"Yi Xuan Qi"} title={"Full Stack Developer"}/>
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to={{ pathname:`/vera`}}  style={{ textDecoration: `none` }} target="_blank">
                                 <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/vera.jpg"} name={"Vera Fan"} title={"Data Scientist "}/>
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to={{ pathname: `/faye`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Faye.jpg"} name={"Faye New"} title={"Cognitive Neuroscientist "}/>
                             </Link>
                         </div>
                     </div>
@@ -64,14 +84,10 @@ export default function TeamPage(props) {
                             </Link>
                         </div>
                         <div className="col-md-4">
-                            <Link to={{ pathname: `/faye`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Faye.jpg"} name={"Faye New"} title={"Cognitive Neuroscientist "}/>
-                            </Link>
+                            <Card style={{display:"none"}}/>
                         </div>
                         <div className="col-md-4">
-                            <Link to={{ pathname: `/shalaila`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Shalaila.jpg"} name={"Dr. Shalaila Hass"} title={"Neuroscientist"}/>
-                            </Link>
+                            <Card style={{display:"none"}}/>
                         </div>
                     </div>
                 </div>

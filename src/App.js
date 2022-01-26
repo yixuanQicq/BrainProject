@@ -97,6 +97,10 @@ function App() {
                         window.location.href = 'https://www.ncbi.nlm.nih.gov/myncbi/shalaila.haas.1/bibliography/public/';
                         return null;
                     }}/>
+                    <Route path='/amirhossein' component={() => {
+                        window.location.href = 'https://scholar.google.com/citations?user=crohCoMAAAAJ&hl=en&oi=ao';
+                        return null;
+                    }}/>
 
                 </Switch>
             </div>

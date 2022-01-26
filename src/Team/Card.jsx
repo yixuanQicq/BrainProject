@@ -6,7 +6,7 @@ export default function Card(props) {
         return(
             <div className="card text-center" >
                 <div className="overflow">
-                    <img src={props.imgsrc} alt="yixuan" className="card-img-top" style={{display:"none"}}/>
+                    <img src={props.imgsrc} alt="team member" className="card-img-top" style={{display:"none"}}/>
                 </div>
                 <div className="card-body text-dark" style={{display:"none"}}>
                     <h4 className="card-title">
@@ -22,7 +22,7 @@ export default function Card(props) {
     return(
         <div className="card text-center">
             <div className="overflow">
-                <img src={props.imgsrc} alt="yixuan" className="card-img-top" />
+                <img src={props.imgsrc} alt="team member" className="card-img-top" />
             </div>
             <div className="card-body text-dark">
                 <h4 className="card-title">
