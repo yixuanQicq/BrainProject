@@ -20,13 +20,29 @@ export default function ExplorePage(props) {
             <br/>
             <br/>
             <Grid container spacing={3} alignItems={"center"}>
-                <Grid item xs={12} md={6}>
-
+                <Grid item xs={12} md={1}></Grid>
+                <Grid item xs={12} md={5}>
+                    <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/age_distribution.jpg" width="100%"/>
                 </Grid>
-                <Grid item xs={12} md={6}>
-
+                <Grid item xs={12} md={5}>
+                    <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/CentileBrain_Map.jpg" width="100%" />
                 </Grid>
+                <Grid item xs={12} md={1}></Grid>
             </Grid>
+            <Grid container spacing={3} alignItems={"center"}>
+                <Grid item xs={12} md={1}></Grid>
+                <Grid item xs={12} md={5}>
+                    <h5 >Age and Sex of the CentileBrain Data Vault</h5>
+                </Grid>
+                <Grid item xs={12} md={5}>
+                    <h5 >Geographical Distribution of the Datasets Contribution to the CentileBrain DataVault</h5>
+                </Grid>
+                <Grid item xs={12} md={1}></Grid>
+            </Grid>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </sections>
     );
 }
