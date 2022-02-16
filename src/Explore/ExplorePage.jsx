@@ -22,7 +22,7 @@ export default function ExplorePage(props) {
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/age_distribution.jpg" width="100%"/>
+                    <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/age_distribution_new.jpg" width="100%"/>
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/CentileBrain_Map.jpg" width="100%" />
