@@ -32,7 +32,7 @@ export default function ExplorePage(props) {
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <h5 >Age and Sex of the CentileBrain Data Vault</h5>
+                    <h5 >Age and Sex Distribution of the Datasets in the CentileBrain Vault</h5>
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <h5 >Geographical Distribution of the Datasets Contribution to the CentileBrain DataVault</h5>

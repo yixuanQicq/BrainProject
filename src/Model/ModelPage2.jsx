@@ -24,7 +24,9 @@ export default function ModelPage2(props) {
                 </Grid>
                 <Grid item xs={12} md={8}>
                     <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
-                        <Grid>
+                        <br/>
+                        <br/>
+                        <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
                             <br/>
                             <br/>
                             <Model_2_html></Model_2_html>
