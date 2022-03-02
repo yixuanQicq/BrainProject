@@ -16,10 +16,8 @@ export default function TutorialPage(props) {
                 <div className="animation start-volume"></div>
             </nav>
             <Grid container spacing={3}>
-                <Grid item xs={12} md={2} >
-                </Grid>
-                <Grid item xs={12} md={8}>
-                    <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
+                <Grid item xs={12} md={12}>
+                    <Grid container spacing={3} direction="row" justify="center" alignContent={"center"}>
                         <Grid>
                             <br/>
                             <h1>Model Generation and Application</h1>
@@ -27,8 +25,6 @@ export default function TutorialPage(props) {
                             <Tutorial_1_html></Tutorial_1_html>
                         </Grid>
                     </Grid>
-                </Grid>
-                <Grid item xs={12} md={2}>
                 </Grid>
             </Grid>
         </section>

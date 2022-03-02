@@ -20,13 +20,9 @@ export default function ModelPage2(props) {
                 <div className="animation start-centileModel"></div>
             </nav>
             <Grid container spacing={3}>
-                <Grid item xs={12} md={2} >
-                </Grid>
-                <Grid item xs={12} md={8}>
-                    <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
-                        <br/>
-                        <br/>
-                        <Grid container spacing={3} direction="row" justify="flex-start" alignItems="center">
+                <Grid item xs={12} md={12}>
+                    <Grid container spacing={3} direction="row" justify="center" alignItems="center">
+                        <Grid>
                             <br/>
                             <br/>
                             <Model_2_html></Model_2_html>
