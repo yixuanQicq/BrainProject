@@ -253,20 +253,6 @@ pre code {
 
 
 
-
-<div id="header">
-
-
-
-<h1 class="title toc-ignore"><center>
-<h1>
-CentileBrain Model
-</h1>
-</center></h1>
-
-</div>
-
-
 <p>The CentileBrain Models were developed using brain morphometric data from multiple cohorts shown in the <a href="https://yixuanqicq.github.io/BrainProject/#/explore2" >Data Vault</a>. <a href="https://drive.google.com/file/d/1UHM7Zn31fTCbMPGcqn0n_fdndorBjISg/view?usp=sharing">These models</a> provide parameters for generating normative deviation measures for subcortical volumes, cortical thickness, and cortical surface area, separately for males and females, from any dataset.</p>
 <p>Researchers wishing to use this framework to generate their own normative models should follow the instructions provided in the <a href="https://yixuanqicq.github.io/BrainProject/#/tutorial">Tutorial </a></p>
 <p>Researchers wishing to apply the CentileModel parameters we provide to generate normative deviation measures for their own datasets should go to <a href="https://yixuanqicq.github.io/BrainProject/#/model">Generate Normative Deviation Values for Your Data </a></p>
