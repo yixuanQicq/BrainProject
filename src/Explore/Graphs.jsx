@@ -150,8 +150,8 @@ export default function Graphs(props) {
             } if (props.gender === "male" && !props.MFPCurve){
                 filePath =  filePath + "src/Explore/data/ca/maleCentile";
             }
-            let value = String.valueOf(34 + parseInt(props.area));
-            return filePath + "/" + value + ".html";
+            let value = 34 + parseInt(props.area);
+            return filePath + "/" + value.toString() + ".html";
         }
 
     }
