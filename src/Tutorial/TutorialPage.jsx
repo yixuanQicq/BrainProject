@@ -20,7 +20,7 @@ export default function TutorialPage(props) {
                     <Grid container spacing={3} direction="row" justify="center" alignContent={"center"}>
                         <Grid>
                             <br/>
-                            <h1>Model Generation and Application for Subcortical Volume</h1>
+                            <h1 align="center">Model Generation and Application for Subcortical Volume</h1>
                             <br/>
                             <Tutorial_1_html></Tutorial_1_html>
                         </Grid>

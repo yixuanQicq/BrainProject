@@ -24,7 +24,7 @@ export default function ModelPage2(props) {
                     <Grid container spacing={3} direction="row" justify="center" alignItems="center">
                         <Grid>
                             <br/>
-                            <h1>CentileBrain Model</h1>
+                            <h1 align="center">CentileBrain Model</h1>
                             <br/>
                             <Model_2_html></Model_2_html>
                         </Grid>

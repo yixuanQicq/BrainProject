@@ -20,7 +20,7 @@ export default function TutorialPage3(props) {
                     <Grid container spacing={3} direction="row" justify="center" alignContent={"center"}>
                         <Grid>
                             <br/>
-                            <h1>Model Generation and Application for Surface area</h1>
+                            <h1 align="center">Model Generation and Application for Surface area</h1>
                             <br/>
                             <Tutorial_3_html></Tutorial_3_html>
                         </Grid>
