@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-const __html = require('./tutorial2.html.js');
+const __html = require('./tutorial3.html.js');
 const template = { __html: __html };
 
-class Tutorial_2_html extends Component {
+class Tutorial_3_html extends Component {
     render() {
         return (
             <div className="screen-share">
@@ -11,4 +11,4 @@ class Tutorial_2_html extends Component {
         );
     }
 }
-export default Tutorial_2_html;
+export default Tutorial_3_html;

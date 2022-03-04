@@ -15,15 +15,16 @@ export default function TutorialPage2(props) {
                 <Link to='/tutorial3'className="tutorial3" style={{width: "233px"}}><span>Surface area</span></Link>
                 <div className="animation start-thickness"></div>
             </nav>
-
-            <Grid container spacing={3} alignContent={"center"}>
-                <Grid item xs={12} md={12} alignContent={"center"}>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div>
-                        <h2 align={"center"}>Coming Soon</h2>
-                    </div>
+            <Grid container spacing={3}>
+                <Grid item xs={12} md={12}>
+                    <Grid container spacing={3} direction="row" justify="center" alignContent={"center"}>
+                        <Grid>
+                            <br/>
+                            <h1>Model Generation and Application for Cortical Thickness</h1>
+                            <br/>
+                            <Tutorial_2_html></Tutorial_2_html>
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
         </section>
