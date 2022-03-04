@@ -238,22 +238,8 @@ export default function ExplorePage2(props) {
                 <Grid item xs={12} md={1}/>
             </Grid>
 
-            {/*Coming Soon Tab*/}
-            <Grid container spacing={3} alignContent={"center"} hidden={morphometric === '' || morphometric === "volumes"}>
-                <Grid item xs={12} md={12} alignContent={"center"}>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div>
-                        <h2 align={"center"}>Coming Soon</h2>
-                    </div>
-                </Grid>
-            </Grid>
-
-            <Graphs gender={gender} value={volumes} MFPCurve={MFPCurve} hidden={morphometric !== "volumes"}></Graphs>
-
-
-
+            <Graphs gender={gender} value={volumes} thickness={thickness} area={area} MFPCurve={MFPCurve} morphometric={morphometric}
+                    hidden={morphometric !== "volumes" && morphometric !== 'area' && morphometric !== "thickness"}></Graphs>
 
         </sections>
     );
