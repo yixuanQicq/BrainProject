@@ -181,12 +181,12 @@ export default function Graphs(props) {
             <Grid item xs={12} md={1}></Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <Iframe url={renderHtmlLeft(renderSwitchLeft())} width={renderWidth()} height="300px"></Iframe>
+                    <Iframe url={renderHtmlLeft(renderSwitchLeft())} width={renderWidth()} height="450px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
-                    <Iframe url={renderHtmlRight(renderSwitchRight())} width={renderWidth()} height="300px"></Iframe>
+                    <Iframe url={renderHtmlRight(renderSwitchRight())} width={renderWidth()} height="450px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={1}></Grid>
