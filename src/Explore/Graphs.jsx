@@ -80,6 +80,7 @@ export default function Graphs(props) {
             } if (props.gender === "male" && !props.MFPCurve){
                 filePath =  filePath + "src/Explore/data/ca/maleCentile";
             }
+            console.log(filePath + "/" + props.area + ".html");
             return filePath + "/" + props.area + ".html";
         }
     }
@@ -151,6 +152,7 @@ export default function Graphs(props) {
                 filePath =  filePath + "src/Explore/data/ca/maleCentile";
             }
             let value = 34 + parseInt(props.area);
+            console.log(filePath + "/" + value.toString() + ".html")
             return filePath + "/" + value.toString() + ".html";
         }
 
@@ -175,7 +177,7 @@ export default function Graphs(props) {
     }
 
     return(
-        <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}} hidden={props.value === ''}>
+        <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
             <Grid item xs={12} md={1}></Grid>
             <Grid item xs={12} md={5}>
                 <div style={{alignItems: 'center'}}>
