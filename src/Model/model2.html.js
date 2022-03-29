@@ -160,10 +160,9 @@ pre code {
 
 
 
-
-<p>The CentileBrain Models were developed using brain morphometric data from multiple cohorts shown in the <u> <a href="https://centilebrain.org/#/explore"><em>Data Vault</em></a></u>. <a href="https://drive.google.com/file/d/116zqib2Y8axR1oq45n9UFDWAt8vJc2eh/view?usp=sharing">These models</a> provide parameters for generating normative deviation measures for subcortical volumes, cortical thickness, and cortical surface area, separately for males and females, from any dataset.</p>
-<p>Researchers wishing to use this framework to generate their own normative models should follow the instructions provided in the <u><a href="https://centilebrain.org/#/tutorial"><em>Tutorial</em></a>.</u></p>
-<p>Researchers wishing to apply the CentileModel parameters we provide to generate normative deviation measures for their own datasets should go to <u><a href="https://centilebrain.org/#/model"><em>Generate Normative Deviation Values for Your Data</em></a></u>.</p>
+<p>The CentileBrain Models were developed using brain morphometric data from multiple cohorts shown in the <a href="https://centilebrain.org/#/explore">Data Vault</a>. <a href="https://github.com/CentileBrain/centilebrain/tree/main/models"><strong>These models</strong></a> provide parameters for generating normative deviation measures for subcortical volumes, cortical thickness, and cortical surface area, separately for males and females, from any dataset.</p>
+<p>Researchers wishing to use this framework to generate their own normative models should follow the instructions provided in the <a href="https://centilebrain.org/#/tutorial">Tutorial</a>.</p>
+<p>Researchers wishing to apply the CentileModel parameters we provide to generate normative deviation measures for their own datasets should go to <a href="https://centilebrain.org/#/model">Generate Normative Deviation Values for Your Data</a>.</p>
 <p style='color:#800000'><strong>Below we provide a demonstration of the CentileBrain Models by applying the model parameters to a simulated multisite dataset of subcortical volumes from females.</strong></p>
 <div id="environment-setup" class="section level3">
 <h3>1. Environment Setup</h3>
@@ -179,7 +178,7 @@ library(tidyverse)</code></pre>
 <h3>2. Demo Data Preparation</h3>
 <div id="importing-the-demonstration-data" class="section level4">
 <h4>2.1 Importing the demonstration data</h4>
-<p>The demonstration <a href="https://drive.google.com/file/d/1TVkVt1E6Nh3ytkOnAwSbxtLgzTxIMryF/view?usp=sharing">data (demo_subcorticalvolume.csv)</a> comprises simulated multisite <a href="https://surfer.nmr.mgh.harvard.edu/">FreeSurfer</a>-derived total intracranial volume (ICV) and 14 regional subcortical volume measures.</p>
+<p>The demonstration <a href="https://drive.google.com/file/d/1TVkVt1E6Nh3ytkOnAwSbxtLgzTxIMryF/view?usp=sharing"><strong>data (demo_subcorticalvolume.csv)</strong></a> comprises simulated multisite FreeSurfer-derived total intracranial volume (ICV) and 14 regional subcortical volume measures.</p>
 <pre class="r"><code>data_original &lt;- read.csv(&quot;../demo_subcorticalvolume.csv&quot;)</code></pre>
 <p>This section is to find out columns with null values as we will need to remove these columns in the following process.</p>
 <pre class="r"><code>NullColIndex = NULL
@@ -197,14 +196,14 @@ nonNullColIndex = setdiff(c(4:ncol(data_original)),NullColIndex)</code></pre>
 </div>
 <div id="site-harmonization-of-the-demonstration-data" class="section level4">
 <h4>2.2 Site Harmonization of the demonstration data</h4>
-<p>Download and read the <a href="https://drive.google.com/file/d/1NFSsYLcA16NUtGFkEbEoMGrs2JEmg_6h/view?usp=sharing">Python script of ComBat-GAM</a> within the R environment.</p>
+<p>Download and read the <a href="https://github.com/CentileBrain/centilebrain/blob/3ffe05cfd2b52591662c8648a2079c363f079f32/models/combatGAM_Python4R.py"><strong>Python script of ComBat-GAM</strong></a> within the R environment.</p>
 <pre class="r"><code>source_python(&quot;../combatGAM_Python4R.py&quot;)</code></pre>
 <p>Site harmonization of the demonstration data is implemented using <a href="https://github.com/rpomponio/neuroHarmonize">ComBat-GAM</a> as follows:</p>
 <pre class="r"><code>covars_temp = data[c(&quot;SITE&quot;,&quot;age&quot;)]
 data_temp = data[,c(3:17)]
 write.csv(covars_temp[,1:2],&quot;../covars_temp.csv&quot;, row.names = FALSE) # save temporary covariates
 write.csv(data_temp,&quot;../data_temp.csv&quot;, row.names = FALSE) # save temporary data
-adjustedData_model &lt;- combatGAM_Python4R_function(&quot;...&quot;) # please cite the path of the saved temporary data and covariates
+adjustedData_model &lt;- combatGAM_Python4R_function(&quot;../&quot;) # please cite the path of the saved temporary data and covariates
 data_harmonized &lt;- data.frame(adjustedData_model[[1]])
 data = data.frame(matrix(0, nrow = nrow(data_original), ncol = ncol(data_original)))
 data[,c(1,2)] = covars_temp
@@ -234,7 +233,23 @@ regionMean = regionMean[-1]</code></pre>
 <h4>3.1 Loading the CentileBrain model parameters</h4>
 <p>The script below loads the parameters for female subcortical volumes.</p>
 <pre class="r"><code>CentileBrain_mfpModel_list &lt;- readRDS(&quot;../MFPmodels_subcorticalvolume_female.rds&quot;)
-CentileBrain_gamlssModel_list &lt;- readRDS(&quot;../GAMLSSmodels_subcorticalvolume_female.rds&quot;)</code></pre>
+CentileBrain_gamlssModel_list &lt;- readRDS(&quot;../GAMLSSmodels_subcorticalvolume_female.rds&quot;)
+for (i in 1:14){
+  a = CentileBrain_mfpModel_list[[i]]
+  attr(a$terms, &quot;.Environment&quot;) &lt;- globalenv()
+  attr(a$fit$terms, &quot;.Environment&quot;) &lt;- globalenv()
+  CentileBrain_mfpModel_list[[i]] = a
+}
+for (i in 1:14){
+  a = CentileBrain_gamlssModel_list[[i]]
+  attr(a$mu.terms, &quot;.Environment&quot;) &lt;- globalenv()
+  attr(a$sigma.terms, &quot;.Environment&quot;) &lt;- globalenv()
+  attr(a$nu.terms, &quot;.Environment&quot;) &lt;- globalenv()
+  if (!is.null(a$tau.terms)){
+    attr(a$tau.terms, &quot;.Environment&quot;) &lt;- globalenv()
+  }
+  CentileBrain_gamlssModel_list[[i]] = a
+}</code></pre>
 </div>
 <div id="application-of-the-centilebrain-model-parameters" class="section level4">
 <h4>3.2 Application of the CentileBrain model parameters</h4>
@@ -257,6 +272,13 @@ names(prediction_list) = names(data_original[,4:ncol(data_original)])
 names(z_score_list) = names(data_original[,4:ncol(data_original)])
 write.csv(prediction_list,&quot;../prediction_subcorticalvolume.csv&quot;,row.names=FALSE)
 write.csv(z_score_list,&quot;../zscore_subcorticalvolume.csv&quot;,row.names=FALSE)</code></pre>
+<p>Calculation of the mean absolute error (MAE) values.</p>
+<pre class="r"><code>MAE_mfp = NULL
+for (i in 1:14){
+  MAE_mfp[i] &lt;- data.frame(sum(abs(unlist(prediction_list[i]) - data_harmonized[,i+1]))/length(unlist(prediction_list[i])))
+}
+names(MAE_mfp) = names(data_original[,4:ncol(data_original)])
+write.csv(MAE_mfp,&quot;../MAE.csv&quot;,row.names=FALSE)</code></pre>
 <p>The script below applies the CentileBrain GAMLSS model parameters to demo data to create predictive centile values, and return the results.</p>
 <pre class="r"><code>regions  &lt;-  data[,c(4:ncol(data))]
 centile_unseen &lt;- array(rep(0, length(unique(data$age))*10*ncol(regions)), c(length(unique(data$age)), 10, ncol(regions)))

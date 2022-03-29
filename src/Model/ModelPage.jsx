@@ -63,10 +63,10 @@ export default function ModelPage(props) {
             <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={10}>
-                    <ButtonGroup variant="contained" aria-label="outlined button group" color="primary" style={{width: "100%"}}>
+                    <ButtonGroup variant="contained" aria-label="outlined button group" style={{width: "100%", backgroundColor: "#659bdf"}}>
                         <Button style={{width: "33.3333%"}} onClick={() => {
                             setMorphometric("volumes");
-                        }}>Subcortical Volumes</Button>
+                        }}>Subcortical Volume</Button>
                         <Button style={{width: "33.3333%"}} onClick={() => {
                             setMorphometric("thickness");
                         }}>Cortical Thickness</Button>
@@ -101,7 +101,7 @@ export default function ModelPage(props) {
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
 
-            <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
+            <Grid container spacing={3} style={{alignItems: 'center'}}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={10}>
                     <div style={{alignItems: 'center'}}>
