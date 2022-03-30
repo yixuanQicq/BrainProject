@@ -63,16 +63,37 @@ export default function ModelPage(props) {
             <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={10}>
-                    <ButtonGroup variant="contained" aria-label="outlined button group" style={{width: "100%", backgroundColor: "#659bdf"}}>
-                        <Button style={{width: "33.3333%"}} onClick={() => {
+                    <ButtonGroup variant="contained" aria-label="outlined button group" style={{width: "100%"}}>
+                        {(morphometric === "volumes" || morphometric === "")&&
+                        <Button style={{width: "33.3333%", backgroundColor: "#659bdf", borderRadius: 5}} onClick={() => {
                             setMorphometric("volumes");
-                        }}>Subcortical Volume</Button>
-                        <Button style={{width: "33.3333%"}} onClick={() => {
+                            }}>Subcortical Volume
+                        </Button>}
+                        {(morphometric !== "volumes" && morphometric !== "") &&
+                        <Button style={{width: "33.3333%", backgroundColor: "#fafafa", borderRadius: 5}} onClick={() => {
+                            setMorphometric("volumes");
+                            }}>Subcortical Volume
+                        </Button>}
+
+                        {(morphometric === "thickness") &&
+                        <Button style={{width: "33.3333%", backgroundColor: "#659bdf", borderRadius: 5}} onClick={() => {
                             setMorphometric("thickness");
-                        }}>Cortical Thickness</Button>
-                        <Button style={{width: "33.3333%"}} onClick={() => {
+                            }}>Cortical Thickness
+                        </Button>}
+                        {(morphometric !== "thickness") &&
+                        <Button style={{width: "33.3333%", backgroundColor: "#fafafa", borderRadius: 5}} onClick={() => {
+                            setMorphometric("thickness");
+                        }}>Cortical Thickness
+                        </Button>}
+
+                        {(morphometric === "area") &&
+                        <Button style={{width: "33.3333%", backgroundColor: "#659bdf", borderRadius: 5}} onClick={() => {
                             setMorphometric("area");
-                        }}>Surface Area</Button>
+                        }}>Surface Area</Button>}
+                        {(morphometric !== "area") &&
+                        <Button style={{width: "33.3333%", backgroundColor: "#fafafa", borderRadius: 5}} onClick={() => {
+                            setMorphometric("area");
+                        }}>Surface Area</Button>}
                     </ButtonGroup>
                 </Grid>
                 <Grid item xs={12} md={1}></Grid>
