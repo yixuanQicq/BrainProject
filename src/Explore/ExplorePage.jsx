@@ -39,7 +39,7 @@ export default function ExplorePage(props) {
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <h5>Information of the datasets can be found  <a href="https://github.com/CentileBrain/centilebrain/raw/main/cohort-table/Cohort%20Table.pdf" style={{color: "black"}}>here</a>.</h5>
+                    <h5>Information of the datasets can be found  <a href="https://docs.google.com/document/d/1R1eaPS7wbl_C4iu980S6rJDNpmC6jfzrhv0l1CXDty0/edit?usp=sharing" target="_blank" style={{color: "black"}}>here</a>.</h5>
                 </Grid>
                 <Grid item xs={12} md={5}></Grid>
                 <Grid item xs={12} md={1}></Grid>
