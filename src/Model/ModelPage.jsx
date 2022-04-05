@@ -10,9 +10,6 @@ import {
     ButtonGroup,
     FormControl,
     FormControlLabel,
-    FormGroup,
-    FormLabel,
-    MenuItem,
     RadioGroup,
     Switch
 } from '@material-ui/core';
@@ -23,7 +20,7 @@ export default function ModelPage(props) {
     const classes = useStyles();
     const [morphometric, setMorphometric] = React.useState('');
     // true = female
-    const [gender, setGender] = React.useState(false);
+    const [gender, setGender] = React.useState(true);
     const handleGenderChange = (event) => {
         setGender(!gender);
     };
@@ -31,10 +28,10 @@ export default function ModelPage(props) {
     function renderUrl() {
         if(morphometric === "" || morphometric === "volumes") {
             if (gender) {
-                return "";
+                return "https://centilebrain-app.shinyapps.io/SV-FEMALE/";
             } else {
                 // return "";
-                return "https://centilebrain-subcortical-volume.shinyapps.io/583e8447ea96482c9ed9bb6b26e74c0c/";
+                return "https://centilebrain-app.shinyapps.io/SV-MALE/";
             }
         } else if (morphometric === "thickness") {
             if (gender) {
@@ -126,12 +123,6 @@ export default function ModelPage(props) {
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={10}>
                     <div style={{alignItems: 'center'}}>
-                        {/*<h1 hidden={(morphometric !== "volumes" && morphometric !== "")|| !gender}>1.1</h1>*/}
-                        {/*<h1 hidden={morphometric !== "volumes" || gender}>1.2</h1>*/}
-                        {/*<h1 hidden={morphometric !== "thickness" || !gender}>2.1</h1>*/}
-                        {/*<h1 hidden={morphometric !== "thickness" || gender}>2.2</h1>*/}
-                        {/*<h1 hidden={morphometric !== "area" || !gender}>3.1</h1>*/}
-                        {/*<h1 hidden={morphometric !== "area" || gender}>3.2</h1>*/}
                         <Iframe url={renderUrl()} width="100%" height="1000px"></Iframe>
                     </div>
                 </Grid>

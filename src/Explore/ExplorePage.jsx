@@ -1,11 +1,8 @@
 import React, {useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Home/Header';
 import { Link } from 'react-router-dom';
 import "./explore.css"
 import Grid from '@material-ui/core/Grid';
-const useStyles = makeStyles((theme) => ({
-}));
 
 export default function ExplorePage(props) {
 
@@ -37,6 +34,14 @@ export default function ExplorePage(props) {
                 <Grid item xs={12} md={5}>
                     <h5 >Geographical Distribution of the Datasets Contribution to the CentileBrain DataVault</h5>
                 </Grid>
+                <Grid item xs={12} md={1}></Grid>
+            </Grid>
+            <Grid container spacing={3} alignItems={"center"}>
+                <Grid item xs={12} md={1}></Grid>
+                <Grid item xs={12} md={5}>
+                    <h5>Information of the datasets can be found  <a href="https://github.com/CentileBrain/centilebrain/raw/main/cohort-table/Cohort%20Table.pdf" style={{color: "black"}}>here</a>.</h5>
+                </Grid>
+                <Grid item xs={12} md={5}></Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
             <br/>
