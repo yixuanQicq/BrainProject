@@ -35,15 +35,15 @@ export default function ModelPage(props) {
             }
         } else if (morphometric === "thickness") {
             if (gender) {
-                return "";
+                return "https://centilebrain-applications.shinyapps.io/CT-FEMALE/";
             } else {
-                return "";
+                return "https://centilebrain-applications.shinyapps.io/CT-MALE/";
             }
         } else {
             if (gender) {
-                return "";
+                return "https://centilebrain-app.shinyapps.io/SA-FEMALE/";
             } else {
-                return "";
+                return "https://centilebrain-app.shinyapps.io/SA-MALE/";
             }
         }
     }

@@ -29,17 +29,17 @@ export default function ExplorePage(props) {
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <h5 >Age and Sex Distribution of the Datasets in the CentileBrain Vault</h5>
+                    <h5 >Age and Sex Distribution of the Datasets in the CentileBrain Data Vault</h5>
                 </Grid>
                 <Grid item xs={12} md={5}>
-                    <h5 >Geographical Distribution of the Datasets Contribution to the CentileBrain DataVault</h5>
+                    <h5 >Geographical Distribution of the Datasets Contributing to the CentileBrain Data Vault</h5>
                 </Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <h5>Information of the datasets can be found  <a href="https://docs.google.com/document/d/1R1eaPS7wbl_C4iu980S6rJDNpmC6jfzrhv0l1CXDty0/edit?usp=sharing" target="_blank" style={{color: "black"}}>here</a>.</h5>
+                    <h5>Information on the datasets can be found  <a href="https://docs.google.com/document/d/1R1eaPS7wbl_C4iu980S6rJDNpmC6jfzrhv0l1CXDty0/edit?usp=sharing" target="_blank" style={{color: "black"}}>here</a>.</h5>
                 </Grid>
                 <Grid item xs={12} md={5}></Grid>
                 <Grid item xs={12} md={1}></Grid>

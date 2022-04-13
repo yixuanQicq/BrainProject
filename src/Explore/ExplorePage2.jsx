@@ -229,7 +229,7 @@ export default function ExplorePage2(props) {
                                 control={
                                     <Switch checked={!MFPCurve} onChange={handleCurveChange} color="primary" name="centile" />
                                 }
-                                label="Centile Curve"
+                                label="Centile Curves"
                             />
                         </FormGroup>
                     </FormControl>
