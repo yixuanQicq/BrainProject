@@ -79,12 +79,14 @@ export default function TeamPage(props) {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
-                            <Link to={{ pathname:`/chuntong`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/chuntong.jpg"} name={"Chuntong Gao"} title={"Computer Scientist"}/>
+                            <Link to={{ pathname:`/shiyu`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/shiyu.jpg"} name={"Shiyu Chen"} title={"Computer Scientist"}/>
                             </Link>
                         </div>
                         <div className="col-md-4">
-                            <Card style={{display:"none"}}/>
+                            <Link to={{ pathname:`/chuntong`}}  style={{ textDecoration: `none` }} target="_blank">
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/chuntong.jpg"} name={"Chuntong Gao"} title={"Computer Scientist"}/>
+                            </Link>
                         </div>
                         <div className="col-md-4">
                             <Card style={{display:"none"}}/>

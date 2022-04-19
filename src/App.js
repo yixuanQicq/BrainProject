@@ -101,6 +101,10 @@ function App() {
                         window.location.href = 'https://scholar.google.com/citations?user=crohCoMAAAAJ&hl=en&oi=ao';
                         return null;
                     }}/>
+                    <Route path='/shiyu' component={() => {
+                        window.location.href = 'https://www.linkedin.com/in/shiyu-chen-code/';
+                        return null;
+                    }}/>
 
                 </Switch>
             </div>
