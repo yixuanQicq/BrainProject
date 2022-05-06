@@ -254,7 +254,7 @@ for (region in 4:ncol(data_training_centered)) {
   }
 }
 saveRDS(mfpModel_list, &quot;../mfpModel_subcorticalvolume_list.rds&quot;)</code></pre>
-<p>This section is to use R “gamlss” package to train models for the centiles (0.4,2,10,25,50,75,90,98,99.6) of the morphometric metrics If you would like to learn more about “gamlss” package, please refer to: <a href="https://www.gamlss.com/" class="uri">https://www.gamlss.com/</a>.</p>
+<p>This section is to use R “gamlss” package to train models for the centiles (0.4,2,10,25,50,75,90,98,99.6) of the morphometric metrics. If you would like to learn more about “gamlss” package, please refer to: <a href="https://www.gamlss.com/" class="uri">https://www.gamlss.com/</a>.</p>
 <pre class="r"><code>library(gamlss)
 gamlssModel_list &lt;- NULL
 for (region in 4:ncol(data_training)) {
@@ -272,7 +272,7 @@ for (region in 4:ncol(data_training)) {
 <h3>4. Unseen Data Preparation</h3>
 <div id="import-unseen-data" class="section level4">
 <h4>4.1 Import unseen data</h4>
-<p>Unseen data should be organised same as training data (you can find a template <a href="https://drive.google.com/file/d/1_TIRnk5wzJ0rpsqXY7sLJS6507YwJVli/view?usp=sharing">here</a>). <strong>Note that this script cannot handle missing values</strong>.</p>
+<p>Unseen data should be organised in the same way as the training data (you can find a template <a href="https://drive.google.com/file/d/1_TIRnk5wzJ0rpsqXY7sLJS6507YwJVli/view?usp=sharing">here</a>). <strong>Note that this script cannot handle missing values</strong>.</p>
 <pre class="r"><code>data_unseen_original&lt;-read.csv(&quot;../template_subcorticalvolume_unseen.csv&quot;)</code></pre>
 </div>
 <div id="harmonize-multi-site-unseen-data" class="section level4">

@@ -200,7 +200,6 @@ class FeaturesPage extends React.PureComponent {
                             }}
                             location="page1-wrapper"
                         >
-                            Features
                         </Parallax>
                     )}
 

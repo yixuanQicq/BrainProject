@@ -216,7 +216,8 @@ data_training = data_training[-outlierIndexList,]</code></pre>
 <div id="harmonize-multi-site-training-data" class="section level4">
 <h4>2.3 Harmonize multi-site training data</h4>
 <p>If your training dataset was acquired using a single scanner, skip this section.</p>
-<p>Download and read the <a href="https://raw.githubusercontent.com/CentileBrain/centilebrain/3ffe05cfd2b52591662c8648a2079c363f079f32/models/combatGAM_Python4R.py" target="_blank">Python script of ComBat-GAM</a> within the R environment.</p>
+<p>Download and read the <a href="https://raw.githubusercontent.com/CentileBrain/centilebrain/3ffe05cfd2b52591662c8648a2079c363f079f32/models/combatGAM_Python4R.py" target="_blank"
+>Python script of ComBat-GAM</a> within the R environment.</p>
 <pre class="r"><code>source_python(&quot;../combatGAM_Python4R.py&quot;)</code></pre>
 <p>Multisite or multi-scanner data will be harmonized with <a href="https://drive.google.com/file/d/1NFSsYLcA16NUtGFkEbEoMGrs2JEmg_6h/view?usp=sharing">ComBat-GAM</a> as follows:</p>
 <pre class="r"><code>covars_temp = data_training[c(&quot;SITE&quot;,&quot;age&quot;)]
@@ -257,7 +258,7 @@ for (region in 4:ncol(data_training_centered)) {
   }
 }
 saveRDS(mfpModel_list, &quot;../mfpModel_thickness_list.rds&quot;)</code></pre>
-<p>This section is to use R “gamlss” package to train models for the centiles (0.4,2,10,25,50,75,90,98,99.6) of the morphometric metrics If you would like to learn more about “gamlss” package, please refer to: <a href="https://www.gamlss.com/" class="uri">https://www.gamlss.com/</a>.</p>
+<p>This section is to use R “gamlss” package to train models for the centiles (0.4,2,10,25,50,75,90,98,99.6) of the morphometric metrics. If you would like to learn more about “gamlss” package, please refer to: <a href="https://www.gamlss.com/" class="uri">https://www.gamlss.com/</a>.</p>
 <pre class="r"><code>library(gamlss)
 gamlssModel_list &lt;- NULL
 for (region in 4:ncol(data_training)) {
@@ -275,7 +276,7 @@ for (region in 4:ncol(data_training)) {
 <h3>4. Unseen Data Preparation</h3>
 <div id="import-unseen-data" class="section level4">
 <h4>4.1 Import unseen data</h4>
-<p>Unseen data should be organised same as training data (you can find a template <a href="https://drive.google.com/file/d/1jp5uGJCdEzdQweiLwp_I86tVMJKegfnu/view?usp=sharing">here</a>). <strong>Note that this script cannot handle missing values</strong>.</p>
+<p>Unseen data should be organised in the same way as the training data (you can find a template <a href="https://drive.google.com/file/d/1jp5uGJCdEzdQweiLwp_I86tVMJKegfnu/view?usp=sharing">here</a>). <strong>Note that this script cannot handle missing values</strong>.</p>
 <pre class="r"><code>data_unseen_original&lt;-read.csv(&quot;../template_thickness_unseen.csv&quot;)
 data_unseen_original[,3] &lt;- (data_unseen_original[,3] + data_unseen_original[,4])/2
 data_unseen_original &lt;- data_unseen_original[,-4]
