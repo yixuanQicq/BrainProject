@@ -16,6 +16,8 @@ export default function TeamPage(props) {
                     <h1>Our Team</h1>
                 </div>
 
+                <div style={{paddingRight: '3rem', paddingLeft: '3rem'}}>
+
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
@@ -40,7 +42,7 @@ export default function TeamPage(props) {
                     <div className="row">
                         <div className="col-md-4">
                             <Link to={{ pathname: `/shalaila`}}  style={{ textDecoration: `none` }} target="_blank">
-                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Shalaila.jpg"} name={"Dr. Shalaila Hass"} title={"Neuroscientist"}/>
+                                <Card imgsrc={"https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Shalaila.jpg"} name={"Dr. Shalaila Haas"} title={"Neuroscientist"}/>
                             </Link>
                         </div>
                         <div className="col-md-4">
@@ -92,6 +94,7 @@ export default function TeamPage(props) {
                             <Card style={{display:"none"}}/>
                         </div>
                     </div>
+                </div>
                 </div>
 
             </div>
