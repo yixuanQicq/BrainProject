@@ -20815,7 +20815,12 @@ footer .footer-flag {
     height: 648px;
   }
 }
-.tutorialNav{
+img:hover{
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+
+}.tutorialNav{
     position: relative;
     margin: 50px auto 0;
     width: 700px;
