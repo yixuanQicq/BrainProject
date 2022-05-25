@@ -217,7 +217,7 @@ data_training = data_training[-outlierIndexList,]</code></pre>
 <div id="harmonize-multi-site-training-data" class="section level4">
 <h4>2.3 Harmonize multi-site training data</h4>
 <p>If your training dataset was acquired using a single scanner, skip this section.</p>
-<p>Download and read the <a href="https://raw.githubusercontent.com/CentileBrain/centilebrain/3ffe05cfd2b52591662c8648a2079c363f079f32/models/combatGAM_Python4R.py" target="_blank">Python script of ComBat-GAM</a> within the R environment.</p>
+<p>Download and read the <a href="https://github.com/CentileBrain/centilebrain/blob/main/Python_R_codes/combatGAM_Python4R.py" target="_blank">Python script of ComBat-GAM</a> within the R environment.</p>
 <pre class="r"><code>source_python(&quot;I:/CentileBrain/scripts//combatGAM_Python4R.py&quot;)</code></pre>
 <p>Multisite or multi-scanner data will be harmonized with <a href="https://drive.google.com/file/d/1NFSsYLcA16NUtGFkEbEoMGrs2JEmg_6h/view?usp=sharing">ComBat-GAM</a> as follows:</p>
 <pre class="r"><code>covars_temp = data_training[c(&quot;SITE&quot;,&quot;age&quot;)]
