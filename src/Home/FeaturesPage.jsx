@@ -207,8 +207,8 @@ class FeaturesPage extends React.PureComponent {
                     <div className="title-line-wrapper page1-line">
                         <div className="title-line" />
                     </div>
-                    <Features/>
                     {/*<OverPack>{children}</OverPack>*/}
+                    <Features/>
                 </div>
             </div>
         );

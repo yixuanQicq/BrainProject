@@ -56,7 +56,7 @@ class Header extends React.Component {
                     <a>
                         <span>CentileBrain Model</span>
                     </a>
-                    <Link to="/model2" />
+                    <Link to="/model" />
                 </Menu.Item>
                 <Menu.Item key="tutorial">
                     <a>

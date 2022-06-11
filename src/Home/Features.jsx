@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Features() {
 
     return (
-        <div style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
+        <div style={{ paddingLeft: '4rem', paddingRight: '4rem'}}>
             <Grid container spacing={10} alignItems={'stretch'}>
                 <Grid item xs={12} md={4}>
                     <Grid item xs={12}>
@@ -16,7 +16,7 @@ export default function Features() {
                                 width='100%' />
                         </Link>
                     </Grid>
-                    <Grid item xs={12} style={{ paddingTop: '1rem' }}>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center"}}>
                         <h5>Explore the CentileBrain Dataset</h5>
                     </Grid>
                 </Grid>
@@ -28,7 +28,7 @@ export default function Features() {
                                 width='100%' />
                         </Link>
                     </Grid>
-                    <Grid item xs={12} style={{ paddingTop: '1rem' }}>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                         <h5>Use CentileBrain to Generate Estimates</h5>
                     </Grid>
                 </Grid>
@@ -40,7 +40,7 @@ export default function Features() {
                                 width='100%' />
                         </Link>
                     </Grid>
-                    <Grid item xs={12} style={{ paddingTop: '1rem' }}>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                         <h5>The CentileBrain Model</h5>
                     </Grid>
                 </Grid>
@@ -55,7 +55,7 @@ export default function Features() {
                                 width='100%' />
                         </Link>
                     </Grid>
-                    <Grid item xs={12} style={{ paddingTop: '1rem' }}>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                         <h5>CentileBrain Development Team</h5>
                     </Grid>
                 </Grid>
@@ -67,7 +67,7 @@ export default function Features() {
                                 width='100%' />
                         </Link>
                     </Grid>
-                    <Grid item xs={12} style={{ paddingTop: '1rem' }}>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                         <h5>CentileBrain Publications</h5>
                     </Grid>
                 </Grid>
@@ -79,7 +79,7 @@ export default function Features() {
                                 width='100%' />
                         </Link>
                     </Grid>
-                    <Grid item xs={12} style={{ paddingTop: '1rem' }}>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                         <h5>Learn More About ENIGMA Consortium</h5>
                     </Grid>
                 </Grid>

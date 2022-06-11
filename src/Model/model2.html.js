@@ -196,7 +196,7 @@ nonNullColIndex = setdiff(c(4:ncol(data_original)),NullColIndex)</code></pre>
 </div>
 <div id="site-harmonization-of-the-demonstration-data" class="section level4">
 <h4>2.2 Site Harmonization of the demonstration data</h4>
-<p>Download and read the <a href="https://github.com/CentileBrain/centilebrain/blob/3ffe05cfd2b52591662c8648a2079c363f079f32/models/combatGAM_Python4R.py"><strong>Python script of ComBat-GAM</strong></a> within the R environment.</p>
+<p>Download and read the <a href="https://github.com/CentileBrain/centilebrain/blob/main/Python_R_codes/combatGAM_Python4R.py"><strong>Python script of ComBat-GAM</strong></a> within the R environment.</p>
 <pre class="r"><code>source_python(&quot;../combatGAM_Python4R.py&quot;)</code></pre>
 <p>Site harmonization of the demonstration data is implemented using <a href="https://github.com/rpomponio/neuroHarmonize">ComBat-GAM</a> as follows:</p>
 <pre class="r"><code>covars_temp = data[c(&quot;SITE&quot;,&quot;age&quot;)]
