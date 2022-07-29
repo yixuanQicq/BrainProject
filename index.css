@@ -6776,31 +6776,7 @@ nav .start-ownData,a:nth-child(2):hover~.animation {
 }
 
 
-body{
-    background: -webkit-radial-gradient(#e5e5e5, #ffff, #e5e5e5);
-    background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
-}
-
-/*.card {
-    width: 20rem;
-}*/
-
-.card:hover {
-    box-shadow: 5px 10px 20px 1px rgba(0,0,0, 0.253) !important;
-}
-
-.card-body{
-    padding: 3rem 0 !important;
-}
-
-.card-text{
-    font-size: .9rem;
-    padding: 0.4rem 1.9rem;
-}
-
-.container-fluid .row{
-    padding-top: 6rem;
-}@charset "UTF-8";
+@charset "UTF-8";
 /*!
  * Bootstrap v5.1.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -19788,6 +19764,144 @@ textarea.form-control-lg {
     width: 150px;
     margin: 10px auto;
 }
+body{
+    background: -webkit-radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+    background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+}
+
+/*.card {
+    width: 20rem;
+}*/
+
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0, 0.253) !important;
+}
+
+.card-body{
+    padding: 3rem 0 !important;
+}
+
+.card-text{
+    font-size: .9rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container-fluid .row{
+    padding-top: 6rem;
+}.tutorialNav{
+    position: relative;
+    margin: 50px auto 0;
+    width: 800px;
+    height: 50px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.tutorialLink{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #659bdf;
+    border-radius: 8px;
+    /*transition: all .5s ease 0s !important;*/
+}
+
+nav .start-volume,.tutorial1:hover~.animation {
+    width: 200px !important;
+    left: 0 !important;
+}
+
+nav .start-thickness,.tutorial2:hover~.animation {
+    width: 200px !important;
+    left: 200px !important;
+}
+
+nav .start-area,.tutorial3:hover~.animation {
+    width: 200px !important;
+    left: 400px !important;
+}
+
+nav .start-brainAge,.tutorial4:hover~.animation {
+    width: 200px !important;
+    left: 600px !important;
+}
+
+
+nav{
+    position: relative;
+    margin: 50px auto 0;
+    width: 700px;
+    height: 50px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    /*background: #2383de;*/
+    background: #659bdf;
+    border-radius: 8px;
+    -webkit-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+nav .start-centileModel,a:nth-child(1):hover~.animation {
+    width: 350px;
+    left: 0;
+}
+
+nav .start-ownData,a:nth-child(2):hover~.animation {
+    width: 350px;
+    left: 350px;
+}
+
+
 .github-btn {
   font: bold 11px/14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 20px;
@@ -20820,16 +20934,16 @@ img:hover{
         -ms-transform: scale(1.05);
             transform: scale(1.05);
 
-}.tutorialNav{
+}.brainAgeModelNav{
     position: relative;
     margin: 50px auto 0;
-    width: 700px;
+    width: 500px;
     height: 50px;
     background: #fafafa;
     border-radius: 8px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
-.tutorialLink{
+.brainAgeModelLink{
     font-size: 15px;
     color: black;
     text-decoration: none;
@@ -20837,7 +20951,7 @@ img:hover{
     position: relative;
     z-index: 1;
     display: inline-block;
-    width: 233px;
+    width: 400px;
     text-align: center;
 }
 
@@ -20860,72 +20974,10 @@ nav .animation {
     /*transition: all .5s ease 0s !important;*/
 }
 
-nav .start-volume,.tutorial1:hover~.animation {
-    width: 233px !important;
-    left: 0 !important;
-}
-
-nav .start-thickness,.tutorial2:hover~.animation {
-    width: 233px !important;
-    left: 233px !important;
-}
-
-nav .start-area,.tutorial3:hover~.animation {
-    width: 233px !important;
-    left: 466px !important;
-}
-
-
-nav{
-    position: relative;
-    margin: 50px auto 0;
-    width: 700px;
-    height: 50px;
-    background: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
-}
-nav a{
-    font-size: 15px;
-    color: black;
-    text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    width: 350px;
-    text-align: center;
-}
-
-nav a:link {
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    /*background: #2383de;*/
-    background: #659bdf;
-    border-radius: 8px;
-    -webkit-transition: all .5s ease 0s;
-    transition: all .5s ease 0s;
-}
-
-nav .start-centileModel,a:nth-child(1):hover~.animation {
-    width: 350px;
+nav .start-brainAgeModel,brainAge:hover~.animation {
+    width: 500px !important;
     left: 0;
 }
 
-nav .start-ownData,a:nth-child(2):hover~.animation {
-    width: 350px;
-    left: 350px;
-}
 
 
