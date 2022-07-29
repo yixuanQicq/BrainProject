@@ -1,17 +1,20 @@
+/*eslint-disable */
 import React from 'react';
-import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import ContactPage from './Contact/ContactPage';
 import Privacy from './Contact/PrivacyPage';
 import ExplorePage from './Explore/ExplorePage';
 import PublicationsPage from './Publications/PublicationsPage';
 import TeamPage from './Team/TeamPage';
-import Home from './Home';
 import TutorialPage from './Tutorial/TutorialPage';
 import TutorialPage2 from './Tutorial/tutorialPage2';
 import ExplorePage2 from './Explore/ExplorePage2';
 import ModelPage from './Model/ModelPage';
 import ModelPage2 from './Model/ModelPage2';
 import TutorialPage3 from './Tutorial/TutorialPage3';
+import Home from './Home';
+import BrainAgeModelPage from './BrainAge/BrainAgeModel';
+import TutorialPage4 from './Tutorial/TutorialPage4';
 
 function App() {
     return (
@@ -19,7 +22,7 @@ function App() {
             <div>
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <Home/>
                     </Route>
                     <Route path="/csv">
                         <h2>hey</h2>
@@ -42,6 +45,9 @@ function App() {
                     <Route path="/tutorial3">
                         <TutorialPage3/>
                     </Route>
+                    <Route path="/tutorial4">
+                        <TutorialPage4/>
+                    </Route>
                     <Route path="/model">
                         <ModelPage/>
                     </Route>
@@ -56,6 +62,9 @@ function App() {
                     </Route>
                     <Route path="/privacy">
                         <Privacy/>
+                    </Route>
+                    <Route path="/brainAGE">
+                        <BrainAgeModelPage/>
                     </Route>
                     <Route path='/engima' component={() => {
                         window.location.href = 'https://enigma.ini.usc.edu/';

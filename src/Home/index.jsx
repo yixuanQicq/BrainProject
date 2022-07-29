@@ -1,6 +1,8 @@
 import './static/style';
+
 import React from 'react';
 import DocumentTitle from 'react-document-title';
+
 import FeaturesPage from './FeaturesPage';
 import Footer from './Footer';
 import Header from './Header';

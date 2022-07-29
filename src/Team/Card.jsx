@@ -1,5 +1,6 @@
-import React from 'react'
 import "./card-style.css"
+
+import React from 'react'
 
 export default function Card(props) {
     if (props.imgsrc == null) {

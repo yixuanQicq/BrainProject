@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Header from '../Home/Header';
-import { Link } from 'react-router-dom';
 import "./model.css"
+
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+
+import Header from '../Home/Header';
 import Model_2_html from './model_2_html';
 const useStyles = makeStyles((theme) => ({
 }));

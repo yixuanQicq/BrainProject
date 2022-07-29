@@ -1,13 +1,13 @@
-.tutorialNav{
+.brainAgeModelNav{
     position: relative;
     margin: 50px auto 0;
-    width: 800px;
+    width: 500px;
     height: 50px;
     background: #fafafa;
     border-radius: 8px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
-.tutorialLink{
+.brainAgeModelLink{
     font-size: 15px;
     color: black;
     text-decoration: none;
@@ -15,7 +15,7 @@
     position: relative;
     z-index: 1;
     display: inline-block;
-    width: 200px;
+    width: 400px;
     text-align: center;
 }
 
@@ -38,24 +38,10 @@ nav .animation {
     /*transition: all .5s ease 0s !important;*/
 }
 
-nav .start-volume,.tutorial1:hover~.animation {
-    width: 200px !important;
-    left: 0 !important;
+nav .start-brainAgeModel,brainAge:hover~.animation {
+    width: 500px !important;
+    left: 0;
 }
 
-nav .start-thickness,.tutorial2:hover~.animation {
-    width: 200px !important;
-    left: 200px !important;
-}
-
-nav .start-area,.tutorial3:hover~.animation {
-    width: 200px !important;
-    left: 400px !important;
-}
-
-nav .start-brainAge,.tutorial4:hover~.animation {
-    width: 200px !important;
-    left: 600px !important;
-}
 
 

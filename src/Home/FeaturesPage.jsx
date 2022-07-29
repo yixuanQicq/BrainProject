@@ -5,6 +5,7 @@ import Parallax from 'rc-scroll-anim/lib/ScrollParallax';
 import TweenOne from 'rc-tween-one';
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import Features from './Features';
 
 const { TweenOneGroup } = TweenOne;

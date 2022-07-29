@@ -1,11 +1,5 @@
-import React, {useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Header from '../Home/Header';
-import { Link } from 'react-router-dom';
 import "./model.css"
-import Grid from '@material-ui/core/Grid';
-import Iframe from 'react-iframe';
-import Button from '@material-ui/core/Button';
+
 import {
     ButtonGroup,
     FormControl,
@@ -13,6 +7,14 @@ import {
     RadioGroup,
     Switch
 } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import React, {useState} from 'react';
+import Iframe from 'react-iframe';
+import { Link } from 'react-router-dom';
+
+import Header from '../Home/Header';
 const useStyles = makeStyles((theme) => ({
 }));
 

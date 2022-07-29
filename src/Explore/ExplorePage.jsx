@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
-import Header from '../Home/Header';
-import { Link } from 'react-router-dom';
 import "./explore.css"
+
 import Grid from '@material-ui/core/Grid';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+
+import Header from '../Home/Header';
 
 export default function ExplorePage(props) {
 

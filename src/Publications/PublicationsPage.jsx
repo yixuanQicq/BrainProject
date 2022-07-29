@@ -1,9 +1,10 @@
 // prettier-ignore
-import React, { useState } from 'react';
+import { Box,Button, Divider, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Header from '../Home/Header';
+import React, { useState } from 'react';
 import { v4 as uuid } from "uuid";
-import { Divider, Button, Typography, Box } from '@material-ui/core';
+
+import Header from '../Home/Header';
 
 const useStyles = makeStyles((theme) => ({
 }));
@@ -28,6 +29,18 @@ export default function PublicationsPage(props) {
             info: "Wierenga LM, Doucet GE, Dima D, et al. Greater male than female variability in regional brain structure across \
             the lifespan [published online ahead of print, 2020 Oct 12]. Hum Brain Mapp. 2020;10.1002/hbm.25204. doi:10.1002/hbm.25204",
             link: "https://pubmed.ncbi.nlm.nih.gov/33044802/",
+            id: uuid()
+        },
+        {
+            info: "Modabbernia A, Whalley HC, Glahn DC, Thompson PM, Kahn RS, Frangou S. Systematic evaluation of machine learning \ " +
+                "algorithms for neuroanatomically-based age prediction in youth. Hum Brain Mapp. 2022; doi:10.1002/hbm.26010\n",
+            link: "https://pubmed.ncbi.nlm.nih.gov/35852028/",
+            id: uuid()
+        },
+        {
+            info: "Sanford N, Ge R, Antoniades M, Modabbernia A, Haas SS, Whalley HC, Galea L, Popescu SG, Cole JH, Frangou S. \ " +
+                "Sex differences in predictors and regional patterns of brain age gap estimates. Hum Brain Mapp. 2022; doi: 10.1002/hbm.25983",
+            link: "https://pubmed.ncbi.nlm.nih.gov/35790053/",
             id: uuid()
         }
     ]

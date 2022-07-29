@@ -1,9 +1,6 @@
-import React, {useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Header from '../Home/Header';
-import { Link } from 'react-router-dom';
+/*eslint-disable */
 import "./explore.css"
-import Grid from '@material-ui/core/Grid';
+
 import {
     Box,
     FormControl,
@@ -14,6 +11,12 @@ import {
     MenuItem,
     Select, Switch
 } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+
+import Header from '../Home/Header';
 import Graphs from './Graphs';
 const useStyles = makeStyles((theme) => ({
 }));

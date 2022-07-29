@@ -1,6 +1,7 @@
+import './feature.css';
+
 import Grid from '@material-ui/core/Grid';
 import React from 'react';
-import './feature.css';
 import { Link } from 'react-router-dom';
 
 export default function Features() {
@@ -73,6 +74,27 @@ export default function Features() {
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <Grid item xs={12}>
+                        <Link to='/brainAGE'>
+                            <img
+                                src='https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Home/data/brainAge.jpeg'
+                                width='100%' />
+                        </Link>
+                    </Grid>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
+                        <h5>The BrainAGE Model</h5>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid container spacing={10} alignItems={'stretch'}>
+                <Grid item xs={12} md={4}>
+                    <Grid item xs={12}>
+                    </Grid>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Grid item xs={12}>
                         <Link to='/engima'>
                             <img
                                 src='https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Home/data/enigma.jpeg'
@@ -81,6 +103,12 @@ export default function Features() {
                     </Grid>
                     <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                         <h5>Learn More About ENIGMA Consortium</h5>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Grid item xs={12}>
+                    </Grid>
+                    <Grid item xs={12} style={{ paddingTop: '1rem', textAlign: "center" }}>
                     </Grid>
                 </Grid>
             </Grid>

@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
-import Header from '../Home/Header';
-import Card from './Card';
 import 'bootstrap/dist/css/bootstrap.css';
 import './team-style.css'
+
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+
+import Header from '../Home/Header';
+import Card from './Card';
 
 export default function TeamPage(props) {
 
